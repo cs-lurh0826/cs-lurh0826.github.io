@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next gemini use-motion" lang>
+<html class="theme-next gemini use-motion" lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -92,7 +92,7 @@
 <meta property="og:title" content="about">
 <meta property="og:url" content="http://yoursite.com/about/index.html">
 <meta property="og:site_name" content="RonaldLu&#39;s Blog">
-<meta property="og:locale" content="default">
+<meta property="og:locale" content="en">
 <meta property="og:updated_time" content="2019-05-24T08:55:33.890Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="about">
@@ -144,7 +144,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
   
@@ -328,6 +328,9 @@
           
 
   
+    <div class="comments" id="comments">
+    </div>
+  
 
 
 
@@ -369,32 +372,14 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
             
 
             
-              
-              
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">categories</span>
-                </a>
-              </div>
-            
 
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">tags</span>
-                </a>
-              </div>
             
 
           </nav>
@@ -517,7 +502,7 @@
   
   <!-- The number of total words -->
   <i class="fa fa-pencil"></i>
-  <span class="post-count">This site has 78 words totally</span>
+  <span class="post-count">This site has 73 words totally</span>
 </div>
 
 
@@ -701,6 +686,29 @@ show_date_time();
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'BIpIdUi758VsNu7CGt1910SS-gzGzoHsz',
+        appKey: '3mBAVsYfWoGE6GCgDWveEENa',
+        placeholder: 'Share your idea ~',
+        avatar:'mm',
+        guest_info:guest,
+        lang:'en',
+        pageSize:'6' || 10,
+    });
+  </script>
 
 
 
@@ -1043,6 +1051,8 @@ show_date_time();
   
 
 
+  <script type="text/javascript" src="/js/src/clipboard.min.js"></script>  
+  <script type="text/javascript" src="/js/src/clipboard-use.js"></script>
   <script type="text/javascript" src="/js/src/love.js"></script>
 </body>
 </html>
