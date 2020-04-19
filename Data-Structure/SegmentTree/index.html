@@ -81,25 +81,24 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="RonaldLu - Home" type="application/atom+xml">
+  <link rel="alternate" href="/atom.xml" title="RonaldLu's Blog" type="application/atom+xml">
 
 
 
 
 
 
-<meta name="description" content="线段树的定义&amp;emsp;&amp;emsp;实质是二叉树(平衡但不完全)，但每一个节点都是一个区间(根据业务逻辑的定义)。例如求和，根结点就是所有的元素和，叶子结点就是一个元素的值。&amp;emsp;&amp;emsp;如果区间内有n个元素，使用数组表示线段树，在一般不考虑添加元素的前提下，使用4n的静态空间即可。 线段树的应用&amp;emsp;&amp;emsp;对于某一类问题，我们关心的是一段区间(线段) 经典问题之一：区间染色">
 <meta name="keywords" content="Tree,Segment Tree">
 <meta property="og:type" content="article">
 <meta property="og:title" content="线段树&#x2F;区间树(Segment Tree)">
 <meta property="og:url" content="http://yoursite.com/Data-Structure/SegmentTree/index.html">
-<meta property="og:site_name" content="RonaldLu - Home">
-<meta property="og:description" content="线段树的定义&amp;emsp;&amp;emsp;实质是二叉树(平衡但不完全)，但每一个节点都是一个区间(根据业务逻辑的定义)。例如求和，根结点就是所有的元素和，叶子结点就是一个元素的值。&amp;emsp;&amp;emsp;如果区间内有n个元素，使用数组表示线段树，在一般不考虑添加元素的前提下，使用4n的静态空间即可。 线段树的应用&amp;emsp;&amp;emsp;对于某一类问题，我们关心的是一段区间(线段) 经典问题之一：区间染色">
+<meta property="og:site_name" content="RonaldLu&#39;s Blog">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-04-19T06:45:40.986Z">
+<meta property="og:image" content="http://yoursite.com/Data-Structure/SegmentTree/segment.png">
+<meta property="og:updated_time" content="2020-04-19T07:44:23.426Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="线段树&#x2F;区间树(Segment Tree)">
-<meta name="twitter:description" content="线段树的定义&amp;emsp;&amp;emsp;实质是二叉树(平衡但不完全)，但每一个节点都是一个区间(根据业务逻辑的定义)。例如求和，根结点就是所有的元素和，叶子结点就是一个元素的值。&amp;emsp;&amp;emsp;如果区间内有n个元素，使用数组表示线段树，在一般不考虑添加元素的前提下，使用4n的静态空间即可。 线段树的应用&amp;emsp;&amp;emsp;对于某一类问题，我们关心的是一段区间(线段) 经典问题之一：区间染色">
+<meta name="twitter:image" content="http://yoursite.com/Data-Structure/SegmentTree/segment.png">
 
 
 
@@ -136,7 +135,7 @@
 
 
 <link href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css" rel="stylesheet">
-  <title>线段树/区间树(Segment Tree) | RonaldLu - Home</title>
+  <title>线段树/区间树(Segment Tree) | RonaldLu's Blog</title>
   
 
 
@@ -168,12 +167,12 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">RonaldLu - Home</span>
+        <span class="site-title">RonaldLu's Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <p class="site-subtitle">Bien faire et laisser dire.</p>
+        <p class="site-subtitle">Bien faire et laisser dire</p>
       
   </div>
 
@@ -326,7 +325,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="RonaldLu - Home">
+      <meta itemprop="name" content="RonaldLu's Blog">
     </span>
 
     
@@ -362,8 +361,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2020-04-18T23:45:40-07:00">
-                2020-04-18
+              <time title="Post modified" itemprop="dateModified" datetime="2020-04-19T00:44:23-07:00">
+                2020-04-19
               </time>
             
           </span>
@@ -433,7 +432,8 @@
       
 
       
-        <h3 id="线段树的定义"><a href="#线段树的定义" class="headerlink" title="线段树的定义"></a>线段树的定义</h3><p>&emsp;&emsp;实质是二叉树(平衡但不完全)，但每一个节点都是一个区间(根据业务逻辑的定义)。例如求和，根结点就是所有的元素和，叶子结点就是一个元素的值。<br>&emsp;&emsp;如果区间内有n个元素，使用数组表示线段树，在一般不考虑添加元素的前提下，使用4n的静态空间即可。</p>
+        <p><img src="/Data-Structure/SegmentTree/segment.png" width="100%" height="100%" alt="git"><br><a id="more"></a></p>
+<h3 id="线段树的定义"><a href="#线段树的定义" class="headerlink" title="线段树的定义"></a>线段树的定义</h3><p>&emsp;&emsp;实质是二叉树(平衡但不完全)，但每一个节点都是一个区间(根据业务逻辑的定义)。例如求和，根结点就是所有的元素和，叶子结点就是一个元素的值。<br>&emsp;&emsp;如果区间内有n个元素，使用数组表示线段树，在一般不考虑添加元素的前提下，使用4n的静态空间即可。</p>
 <h3 id="线段树的应用"><a href="#线段树的应用" class="headerlink" title="线段树的应用"></a>线段树的应用</h3><p>&emsp;&emsp;对于某一类问题，我们关心的是一段区间(线段)</p>
 <h4 id="经典问题之一：区间染色"><a href="#经典问题之一：区间染色" class="headerlink" title="经典问题之一：区间染色"></a>经典问题之一：区间染色</h4><p>&emsp;&emsp;有一面长度为n的墙，每次选择一段墙进行染色。<br>&emsp;&emsp;1. m次操作后，我们可以看见多少种颜色?<br>&emsp;&emsp;2. m次操作后，我们在[i, j]区间内看见多少种颜色?<br>&emsp;&emsp;染色操作 = 更新区间，查询操作 = 查询区间</p>
 <h4 id="经典问题之二：区间统计查询"><a href="#经典问题之二：区间统计查询" class="headerlink" title="经典问题之二：区间统计查询"></a>经典问题之二：区间统计查询</h4><p>&emsp;&emsp;查询一个区间[i, j]的最大值，最小值，或者区间数字和</p>
@@ -473,7 +473,7 @@
   <p><span>本文标题:</span>线段树/区间树(Segment Tree)</p>
   <p><span>文章作者:</span>Lu, Ruihui</p>
   <p><span>发布时间:</span>2019年07月14日 - 23:04:30</p>
-  <p><span>最后更新:</span>2020年04月18日 - 23:45:40</p>
+  <p><span>最后更新:</span>2020年04月19日 - 00:44:23</p>
   <p><span>原始链接:</span><a href="/Data-Structure/SegmentTree/" title="线段树/区间树(Segment Tree)">http://yoursite.com/Data-Structure/SegmentTree/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/Data-Structure/SegmentTree/" aria-label="复制成功！"></i></span>
   </p>
