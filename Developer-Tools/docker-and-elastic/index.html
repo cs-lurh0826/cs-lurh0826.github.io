@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="RonaldLu&#39;s Blog">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/Developer-Tools/docker-and-elastic/elastic.png">
-<meta property="og:updated_time" content="2020-04-24T01:38:45.033Z">
+<meta property="og:updated_time" content="2020-04-24T01:39:34.201Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="简单介绍 - Docker和ElasticSearch">
 <meta name="twitter:image" content="http://yoursite.com/Developer-Tools/docker-and-elastic/elastic.png">
@@ -361,7 +361,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2020-04-23T18:38:45-07:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2020-04-23T18:39:34-07:00">
                 2020-04-23
               </time>
             
@@ -440,7 +440,7 @@
 <p>👆-d代表程序直接返回(后端持续运行，作为指挥进程)，由于nginx是一个网络服务器，-p 8080:80是将nginx的端口(80)映射到我们的本地端口(8080)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker stop &lt;container id&gt;</span><br></pre></td></tr></table></figure></p>
 <p>👆终止已经启动的容器(id)</p>
 <h4 id="Modify-and-Commit"><a href="#Modify-and-Commit" class="headerlink" title="Modify and Commit"></a>Modify and Commit</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker cp &lt;file&gt; &lt;container id&gt;://path</span><br></pre></td></tr></table></figure>
-<p>👆向容器中拷贝文件file(暂时性：如果不commit，这种修改只存在于容器运行阶段)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker commit -m &lt;msg&gt; &lt;container id&gt; \[name\]</span><br></pre></td></tr></table></figure></p>
+<p>👆向容器中拷贝文件file(暂时性：如果不commit，这种修改只存在于容器运行阶段)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker commit -m &lt;msg&gt; &lt;container id&gt; [name]</span><br></pre></td></tr></table></figure></p>
 <p>👆commit对相应容器进行的修改(实际上会产生一个新的image)，命令会返回该image id，省略name参数则name为<none></none></p>
 <h3 id="ElasticSearch"><a href="#ElasticSearch" class="headerlink" title="ElasticSearch"></a>ElasticSearch</h3><h4 id="简介-1"><a href="#简介-1" class="headerlink" title="简介"></a>简介</h4><p>全文搜索引擎，能够快速储存、搜索和分析海量数据，通常可以满足大量站内搜索的需求，例如维基百科、Github、Stack Overflow。不需要建表、配置字段等；数据可以JSON格式存储；原生支持搜索，不需要拼装查询语句。</p>
 <h4 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h4><p>方法一: 从网站下载安装包、配置、运行<br>方法二: 直接使用Docker拉取对应版本的elasticsearch<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker pull docker.elastic.co/elasticsearch/elasticsearch:7.6.2</span><br><span class="line">docker run -p 9200:9200 -p 9300:9300 -e &quot;discovery.type=single-node&quot; docker.elastic.co/elasticsearch/elasticsearch:7.6.2</span><br></pre></td></tr></table></figure></p>
@@ -484,7 +484,7 @@
   <p><span>本文标题:</span>简单介绍 - Docker和ElasticSearch</p>
   <p><span>文章作者:</span>Lu, Ruihui</p>
   <p><span>发布时间:</span>2020年04月19日 - 00:54:24</p>
-  <p><span>最后更新:</span>2020年04月23日 - 18:38:45</p>
+  <p><span>最后更新:</span>2020年04月23日 - 18:39:34</p>
   <p><span>原始链接:</span><a href="/Developer-Tools/docker-and-elastic/" title="简单介绍 - Docker和ElasticSearch">http://yoursite.com/Developer-Tools/docker-and-elastic/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/Developer-Tools/docker-and-elastic/" aria-label="复制成功！"></i></span>
   </p>
