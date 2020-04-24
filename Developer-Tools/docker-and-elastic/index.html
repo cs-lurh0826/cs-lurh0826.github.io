@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="RonaldLu&#39;s Blog">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/Developer-Tools/docker-and-elastic/elastic.png">
-<meta property="og:updated_time" content="2020-04-24T02:36:33.351Z">
+<meta property="og:updated_time" content="2020-04-24T02:44:12.380Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="简单介绍 - Docker和ElasticSearch">
 <meta name="twitter:image" content="http://yoursite.com/Developer-Tools/docker-and-elastic/elastic.png">
@@ -361,7 +361,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2020-04-23T19:36:33-07:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2020-04-23T19:44:12-07:00">
                 2020-04-23
               </time>
             
@@ -404,7 +404,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  967
+                  982
                 </span>
               
 
@@ -444,7 +444,7 @@
 <p>👆保存改动为新的image，命令会返回该image id，省略name参数则name为<none></none></p>
 <h4 id="Create-Image-Dockerfile"><a href="#Create-Image-Dockerfile" class="headerlink" title="Create Image (Dockerfile)"></a>Create Image (Dockerfile)</h4><p>首先在想要打包的项目根目录下创建一个Dockerfile，然后用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker build -t &lt;tag&gt; .</span><br></pre></td></tr></table></figure></p>
 <p>👆创建image，-t代表tag，’.’代表当前路径下的所有文件</p>
-<h4 id="Dockerfile"><a href="#Dockerfile" class="headerlink" title="Dockerfile"></a>Dockerfile</h4><h5 id="语法小结"><a href="#语法小结" class="headerlink" title="语法小结"></a>语法小结</h5><p>FROM: base image<br>RUN: 执行命令<br>ADD: 添加文件（比COPY更强大些，包括远程文件）<br>COPY: 拷贝文件<br>CMD: 执行命令<br>EXPOSE: 暴露端口<br>WORKDIR: 指定路径<br>MAINTAINER: 维护者<br>ENV: 设定环境变量<br>ENTRYPOINT: 容器入口<br>USER: 指定用户<br>VOLUME: mount point</p>
+<h4 id="Dockerfile"><a href="#Dockerfile" class="headerlink" title="Dockerfile"></a>Dockerfile</h4><h5 id="语法小结"><a href="#语法小结" class="headerlink" title="语法小结"></a>语法小结</h5><p>FROM: base image<br>RUN: 执行命令<br>ADD: 添加文件（比COPY更强大些，包括远程文件）<br>COPY: 拷贝文件<br>CMD: 执行命令<br>EXPOSE: 暴露端口<br>WORKDIR: 指定路径<br>MAINTAINER: 维护者<br>ENV: 设定环境变量<br>ENTRYPOINT: 容器入口<br>USER: 指定用户<br>VOLUME: mount point(提供独立于<strong>容器</strong>之外的<strong>持久化</strong>存储)</p>
 <h5 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h5><p>👇示例1<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">FROM alpine:latest</span><br><span class="line">MAINTAINER rl</span><br><span class="line">CMD echo &quot;Hello, Docker~&quot;</span><br></pre></td></tr></table></figure></p>
 <p>👇示例2<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">FROM ubuntu</span><br><span class="line">MAINTAINER rl</span><br><span class="line">RUN apt-get update</span><br><span class="line">RUN apt-get install -y nginx</span><br><span class="line">COPY index.html /var/www/html</span><br><span class="line">ENTRYPOINT [&quot;/user/sbin/nginx&quot;, &quot;-g&quot;, &quot;daemon off;&quot;]</span><br><span class="line">EXPOSE 80</span><br></pre></td></tr></table></figure></p>
 <h3 id="ElasticSearch"><a href="#ElasticSearch" class="headerlink" title="ElasticSearch"></a>ElasticSearch</h3><h4 id="简介-1"><a href="#简介-1" class="headerlink" title="简介"></a>简介</h4><p>全文搜索引擎，能够快速储存、搜索和分析海量数据，通常可以满足大量站内搜索的需求，例如维基百科、Github、Stack Overflow。不需要建表、配置字段等；数据可以JSON格式存储；原生支持搜索，不需要拼装查询语句。</p>
@@ -489,7 +489,7 @@
   <p><span>本文标题:</span>简单介绍 - Docker和ElasticSearch</p>
   <p><span>文章作者:</span>Lu, Ruihui</p>
   <p><span>发布时间:</span>2020年04月19日 - 00:54:24</p>
-  <p><span>最后更新:</span>2020年04月23日 - 19:36:33</p>
+  <p><span>最后更新:</span>2020年04月23日 - 19:44:12</p>
   <p><span>原始链接:</span><a href="/Developer-Tools/docker-and-elastic/" title="简单介绍 - Docker和ElasticSearch">http://yoursite.com/Developer-Tools/docker-and-elastic/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/Developer-Tools/docker-and-elastic/" aria-label="复制成功！"></i></span>
   </p>
