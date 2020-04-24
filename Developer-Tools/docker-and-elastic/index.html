@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="RonaldLu&#39;s Blog">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/Developer-Tools/docker-and-elastic/elastic.png">
-<meta property="og:updated_time" content="2020-04-24T01:37:53.850Z">
+<meta property="og:updated_time" content="2020-04-24T01:38:45.033Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="简单介绍 - Docker和ElasticSearch">
 <meta name="twitter:image" content="http://yoursite.com/Developer-Tools/docker-and-elastic/elastic.png">
@@ -361,7 +361,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2020-04-23T18:37:53-07:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2020-04-23T18:38:45-07:00">
                 2020-04-23
               </time>
             
@@ -404,7 +404,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  807
+                  813
                 </span>
               
 
@@ -434,7 +434,7 @@
 <p>👆hello from docker，我们可以看到docker运行流程<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -it alpine sh</span><br></pre></td></tr></table></figure></p>
 <p>👆docker run是运行，-it是输入输出重定向，alpine是最小Linux镜像，sh是shell命令(ubuntu -&gt; bash)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker images</span><br></pre></td></tr></table></figure></p>
 <p>👆查看已经获取的本地镜像<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker ps</span><br></pre></td></tr></table></figure></p>
-<p>👆列出当前正在运行的容器<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker image rm &lt;image id&gt; [&lt;image id&gt; ...]</span><br></pre></td></tr></table></figure></p>
+<p>👆列出当前正在运行的容器<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker image rm &lt;image id&gt; [&lt;image id&gt; ...]</span><br><span class="line">docker rmi &lt;image id&gt;</span><br></pre></td></tr></table></figure></p>
 <p>👆移除获取的本地镜像(需要先移除对应的容器)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker rm &lt;container id&gt; [&lt;container id&gt; ...]</span><br></pre></td></tr></table></figure></p>
 <p>👆移除获取的容器<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -p 8080:80 nginx</span><br></pre></td></tr></table></figure></p>
 <p>👆-d代表程序直接返回(后端持续运行，作为指挥进程)，由于nginx是一个网络服务器，-p 8080:80是将nginx的端口(80)映射到我们的本地端口(8080)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker stop &lt;container id&gt;</span><br></pre></td></tr></table></figure></p>
@@ -484,7 +484,7 @@
   <p><span>本文标题:</span>简单介绍 - Docker和ElasticSearch</p>
   <p><span>文章作者:</span>Lu, Ruihui</p>
   <p><span>发布时间:</span>2020年04月19日 - 00:54:24</p>
-  <p><span>最后更新:</span>2020年04月23日 - 18:37:53</p>
+  <p><span>最后更新:</span>2020年04月23日 - 18:38:45</p>
   <p><span>原始链接:</span><a href="/Developer-Tools/docker-and-elastic/" title="简单介绍 - Docker和ElasticSearch">http://yoursite.com/Developer-Tools/docker-and-elastic/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/Developer-Tools/docker-and-elastic/" aria-label="复制成功！"></i></span>
   </p>
