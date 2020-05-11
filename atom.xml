@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-24T04:54:17.146Z</updated>
+  <updated>2020-05-11T09:13:32.405Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Kubernetes基础</title>
+    <link href="http://yoursite.com/Developer-Tools/kubernetes-basic/"/>
+    <id>http://yoursite.com/Developer-Tools/kubernetes-basic/</id>
+    <published>2020-04-27T12:42:23.000Z</published>
+    <updated>2020-05-11T09:13:32.405Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="/Developer-Tools/kubernetes-basic/Kubernetes.png" width="100%" height="100%" alt="git"><br><a id="more"></a></p><h3 id="Kubernetes-k8s"><a href="#Kubernetes-k8s" class="headerlink" title="Kubernetes (k8s)"></a>Kubernetes (k8s)</h3><h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>面向云原生应用 - 以Google Borg(Google内部容器管理平台)为原型重新设计和实现的容器管理和编排调用工具。</p><h4 id="云原生模式"><a href="#云原生模式" class="headerlink" title="云原生模式"></a>云原生模式</h4><p>随着容器技术的出现以及应用面临的外部环境变化，云原生成为一种应用云化开发、部署和运行的主流方式。<br>容器 - 应用部署、运行和管理的基本单元<br>基础 - 应用的容器化和微服务化<br>核心 - 借助容器管理自动化平台进行动态编排和资源优化利用</p><h4 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h4><p>容器编排管理平台、微服务支撑平台、可移植的“云平台”</p><h3 id="Kubernetes基本概念"><a href="#Kubernetes基本概念" class="headerlink" title="Kubernetes基本概念"></a>Kubernetes基本概念</h3><h4 id="Pods"><a href="#Pods" class="headerlink" title="Pods"></a>Pods</h4><p>一个pod是k8s中应用的最小单元，pod可以由多个容器组成，有如下特性:<br>1.单一IP地址<br>2.共享localhost<br>3.共享网络端口<br>4.共享卷(volumes)<br>5.共享IPC(inter-process communication)空间<br>在pod中的容器是通过localhost进行通信，而pod之间的通信是由services来实现的。</p><h4 id="ReplicaSets"><a href="#ReplicaSets" class="headerlink" title="ReplicaSets"></a>ReplicaSets</h4><p>由于pods具有非永恒性(如果终止，便代表结束)，那么我们如何处理同个pod的多个版本运行？<br>引入了replication controller，该控制器位于pod资源类型的上层来对其进行控制，可以有效防止失败/错误的发生；<br>由此有了replica set，代表指定数量的需要运行的pods的集合。</p><h4 id="Services"><a href="#Services" class="headerlink" title="Services"></a>Services</h4><p>在k8s中，一个服务(service)是pods之间通信的基础，就像pods之间的网络抽象。<br>注：服务允许k8s为pods设置单一的DNS记录。</p><h4 id="Deployments"><a href="#Deployments" class="headerlink" title="Deployments"></a>Deployments</h4><p>部署资源类型(deployment resource type)位于replica set的上层操作。<br>一般来说，升级需要替换整个replica set，这样会导致应用停机进行升级；因此，k8s采用滚动升级(rolling upgrade), 使得我们可以不用停机就可以进行升级。</p><h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>Deployments控制replica sets，然后replica sets控制pods。<br>注意：使用部署资源类型时仍然需要用服务访问。</p><h3 id="k8s相关工具"><a href="#k8s相关工具" class="headerlink" title="k8s相关工具"></a>k8s相关工具</h3><h4 id="Install-and-Set-Up-kubectl-https-kubernetes-io-docs-tasks-tools-install-kubectl-install-kubectl-on-macos"><a href="#Install-and-Set-Up-kubectl-https-kubernetes-io-docs-tasks-tools-install-kubectl-install-kubectl-on-macos" class="headerlink" title="(Install and Set Up kubectl)[https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-macos]"></a>(Install and Set Up kubectl)[<a href="https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-macos]" target="_blank" rel="noopener">https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-macos]</a></h4><p>Kubernetes命令行工具，允许用户使用指令来管理k8s集群。</p><h4 id="Install-Minikube-https-kubernetes-io-docs-tasks-tools-install-minikube"><a href="#Install-Minikube-https-kubernetes-io-docs-tasks-tools-install-minikube" class="headerlink" title="(Install Minikube)[https://kubernetes.io/docs/tasks/tools/install-minikube/]"></a>(Install Minikube)[<a href="https://kubernetes.io/docs/tasks/tools/install-minikube/]" target="_blank" rel="noopener">https://kubernetes.io/docs/tasks/tools/install-minikube/]</a></h4><p>Minikube是为了开发者能在个人电脑上运行k8s而提供的一套工具，Go语言编写，通过调用虚拟化管理程序，创建出一个运行在虚拟机内的单节点集群。</p><h4 id="VM-driver-documentation-https-kubernetes-io-docs-setup-learning-environment-minikube-specifying-the-vm-driver"><a href="#VM-driver-documentation-https-kubernetes-io-docs-setup-learning-environment-minikube-specifying-the-vm-driver" class="headerlink" title="(VM driver documentation)[https://kubernetes.io/docs/setup/learning-environment/minikube/#specifying-the-vm-driver]"></a>(VM driver documentation)[<a href="https://kubernetes.io/docs/setup/learning-environment/minikube/#specifying-the-vm-driver]" target="_blank" rel="noopener">https://kubernetes.io/docs/setup/learning-environment/minikube/#specifying-the-vm-driver]</a></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">minikube start --driver=&lt;driver_name&gt;</span><br></pre></td></tr></table></figure><p>👆Enter the name of the hypervisor you installed in lowercase letters where &lt;driver_name&gt; is mentioned below.<br>Driver is <a href="https://minikube.sigs.k8s.io/docs/drivers/docker/" target="_blank" rel="noopener">Docker</a></p><h3 id="推荐文章"><a href="#推荐文章" class="headerlink" title="推荐文章"></a>推荐文章</h3><ol><li><a href="https://www.kubernetes.org.cn/5025.html" target="_blank" rel="noopener">kubernetes1.13.1+etcd3.3.10+flanneld0.10集群部署</a></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/Developer-Tools/kubernetes-basic/Kubernetes.png&quot; width=&quot;100%&quot; height=&quot;100%&quot; alt=&quot;git&quot;&gt;&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Developer Tools" scheme="http://yoursite.com/categories/Developer-Tools/"/>
+    
+    
+      <category term="Kubernetes" scheme="http://yoursite.com/tags/Kubernetes/"/>
+    
+  </entry>
   
   <entry>
     <title>简单介绍 - Docker和ElasticSearch</title>

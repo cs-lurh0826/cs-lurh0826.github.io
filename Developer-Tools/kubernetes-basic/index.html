@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Docker,ElasticSearch,">
+  <meta name="keywords" content="Kubernetes,">
 
 
 
@@ -88,17 +88,17 @@
 
 
 
-<meta name="keywords" content="Docker,ElasticSearch">
+<meta name="keywords" content="Kubernetes">
 <meta property="og:type" content="article">
-<meta property="og:title" content="简单介绍 - Docker和ElasticSearch">
-<meta property="og:url" content="http://yoursite.com/Developer-Tools/docker-and-elastic/index.html">
+<meta property="og:title" content="Kubernetes基础">
+<meta property="og:url" content="http://yoursite.com/Developer-Tools/kubernetes-basic/index.html">
 <meta property="og:site_name" content="RonaldLu&#39;s Blog">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://yoursite.com/Developer-Tools/docker-and-elastic/elastic.png">
-<meta property="og:updated_time" content="2020-04-24T04:54:17.146Z">
+<meta property="og:image" content="http://yoursite.com/Developer-Tools/kubernetes-basic/Kubernetes.png">
+<meta property="og:updated_time" content="2020-05-11T09:13:32.405Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="简单介绍 - Docker和ElasticSearch">
-<meta name="twitter:image" content="http://yoursite.com/Developer-Tools/docker-and-elastic/elastic.png">
+<meta name="twitter:title" content="Kubernetes基础">
+<meta name="twitter:image" content="http://yoursite.com/Developer-Tools/kubernetes-basic/Kubernetes.png">
 
 
 
@@ -128,14 +128,14 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/Developer-Tools/docker-and-elastic/">
+  <link rel="canonical" href="http://yoursite.com/Developer-Tools/kubernetes-basic/">
 
 
 
 
 
 <link href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css" rel="stylesheet">
-  <title>简单介绍 - Docker和ElasticSearch | RonaldLu's Blog</title>
+  <title>Kubernetes基础 | RonaldLu's Blog</title>
   
 
 
@@ -316,7 +316,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/Developer-Tools/docker-and-elastic/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/Developer-Tools/kubernetes-basic/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Lu, Ruihui">
@@ -333,7 +333,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">简单介绍 - Docker和ElasticSearch</h1>
+          <h1 class="post-title" itemprop="name headline">Kubernetes基础</h1>
         
 
         <div class="post-meta">
@@ -345,8 +345,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-04-19T00:54:24-07:00">
-                2020-04-19
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-04-27T05:42:23-07:00">
+                2020-04-27
               </time>
             
 
@@ -361,8 +361,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2020-04-23T21:54:17-07:00">
-                2020-04-23
+              <time title="Post modified" itemprop="dateModified" datetime="2020-05-11T02:13:32-07:00">
+                2020-05-11
               </time>
             
           </span>
@@ -404,7 +404,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  1.5k
+                  672
                 </span>
               
 
@@ -426,54 +426,22 @@
       
 
       
-        <p><img src="/Developer-Tools/docker-and-elastic/elastic.png" width="100%" height="100%" alt="git"><br><a id="more"></a></p>
-<h3 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a>Docker</h3><h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>容器引擎，能够打包/发布应用程序，包括系统环境、配置、依赖；虚拟化，沙箱机制(“轻量级虚拟机”)；Go语言编写。</p>
-<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p><a href="https://www.docker.com/products/docker-desktop" target="_blank" rel="noopener">下载安装包并安装</a></p>
-<h4 id="术语"><a href="#术语" class="headerlink" title="术语"></a>术语</h4><p>host: 宿主机(正在使用Docker的机器)<br>image: 镜像(可以从远端拉取或者本地构建的可重复使用的软件打包)<br>container: 镜像运行时的容器<br>registry: 镜像的注册仓库<br>daemon: Docker的守护进程，用来接受用户命令、和registry共享<br>client: 客户端(给daemon输送命令)</p>
-<h4 id="Run-it-Terminal-Command"><a href="#Run-it-Terminal-Command" class="headerlink" title="Run it (Terminal Command)"></a>Run it (Terminal Command)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker version</span><br></pre></td></tr></table></figure>
-<p>👆我们可以看到Client和Server的信息<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run hello-world</span><br></pre></td></tr></table></figure></p>
-<p>👆hello from docker，我们可以看到docker运行流程<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -it alpine sh</span><br></pre></td></tr></table></figure></p>
-<p>👆docker run是运行，-it是输入输出重定向，alpine是最小Linux镜像，sh是shell命令(ubuntu -&gt; bash)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker images</span><br></pre></td></tr></table></figure></p>
-<p>👆查看已经获取的本地镜像<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker ps</span><br><span class="line">docker ps -a</span><br></pre></td></tr></table></figure></p>
-<p>👆列出当前正在运行的容器<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker image rm &lt;image id&gt; [&lt;image id&gt; ...]</span><br><span class="line">docker rmi &lt;image id&gt;</span><br></pre></td></tr></table></figure></p>
-<p>👆移除获取的本地镜像(需要先移除对应的容器)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker rm &lt;container id&gt; [&lt;container id&gt; ...]</span><br></pre></td></tr></table></figure></p>
-<p>👆移除获取的容器<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -p 8080:80 nginx</span><br></pre></td></tr></table></figure></p>
-<p>👆-d代表程序直接返回(后端持续运行，作为指挥进程)，由于nginx是一个网络服务器，-p 8080:80是将nginx的端口(80)映射到我们的本地端口(8080)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker stop &lt;container id&gt;</span><br></pre></td></tr></table></figure></p>
-<p>👆终止已经启动的容器(id)</p>
-<h4 id="Modify-and-Commit"><a href="#Modify-and-Commit" class="headerlink" title="Modify and Commit"></a>Modify and Commit</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker cp &lt;file&gt; &lt;container id&gt;://path</span><br></pre></td></tr></table></figure>
-<p>👆向容器中拷贝文件file(暂时性：如果不commit，这种修改只存在于容器运行阶段)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker commit -m &lt;msg&gt; &lt;container id&gt; [name]</span><br></pre></td></tr></table></figure></p>
-<p>👆保存改动为新的image，命令会返回该image id，省略name参数则name为<none></none></p>
-<h4 id="Create-Image-Dockerfile"><a href="#Create-Image-Dockerfile" class="headerlink" title="Create Image (Dockerfile)"></a>Create Image (Dockerfile)</h4><p>首先在想要打包的项目根目录下创建一个Dockerfile，然后用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker build -t &lt;tag&gt; .</span><br></pre></td></tr></table></figure></p>
-<p>👆创建image，-t代表tag，’.’代表当前路径下的所有文件</p>
-<h4 id="Dockerfile"><a href="#Dockerfile" class="headerlink" title="Dockerfile"></a>Dockerfile</h4><h5 id="语法小结"><a href="#语法小结" class="headerlink" title="语法小结"></a>语法小结</h5><p>FROM: base image<br>RUN: 执行命令<br>ADD: 添加文件（比COPY更强大些，包括远程文件）<br>COPY: 拷贝文件<br>CMD: 执行命令<br>EXPOSE: 暴露端口<br>WORKDIR: 指定路径<br>MAINTAINER: 维护者<br>ENV: 设定环境变量<br>ENTRYPOINT: 容器入口<br>USER: 指定用户<br>VOLUME: mount point(提供独立于<strong>容器</strong>之外的<strong>持久化</strong>存储)</p>
-<h5 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h5><p>👇示例1<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">FROM alpine:latest</span><br><span class="line">MAINTAINER rl</span><br><span class="line">CMD echo &quot;Hello, Docker~&quot;</span><br></pre></td></tr></table></figure></p>
-<p>👇示例2<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">FROM ubuntu</span><br><span class="line">MAINTAINER rl</span><br><span class="line">RUN apt-get update</span><br><span class="line">RUN apt-get install -y nginx</span><br><span class="line">COPY index.html /var/www/html</span><br><span class="line">ENTRYPOINT [&quot;/user/sbin/nginx&quot;, &quot;-g&quot;, &quot;daemon off;&quot;]</span><br><span class="line">EXPOSE 80</span><br></pre></td></tr></table></figure></p>
-<h4 id="Volume-挂载"><a href="#Volume-挂载" class="headerlink" title="Volume(挂载)"></a>Volume(挂载)</h4><h5 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --name nginx -v /usr/share/nginx/html nginx</span><br></pre></td></tr></table></figure>
-<p>👆挂载，/usr/share/nginx/html代表容器内部的地址(nginx用来访问网页)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker inspect nginx</span><br></pre></td></tr></table></figure></p>
-<p>👆检查信息，可以在返回结果中查找到”Mounts”下的”Source”，即是在宿主机上的挂载点<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">screen ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty</span><br><span class="line">/* If using Mac OS High Sierra */</span><br><span class="line">screen ~/Library/Containers/com.docker.docker/Data/vms/0/tty</span><br></pre></td></tr></table></figure></p>
-<p>👆该指令只针对MAC(Linux无需该步骤)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /var/lib/docker/volumes/7c1601548c5adbd50e5bee2692939fb11bb5a52db52bb2ad1174c972b9550ec8/_data</span><br></pre></td></tr></table></figure></p>
-<p>👆Go to volume path(示例)</p>
-<h5 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -p 80:80 -v $PWD/html:/usr/share/nginx/html nginx</span><br></pre></td></tr></table></figure>
-<p>👆$PWD是环境变量，指向Host当前目录</p>
-<h5 id="方式三"><a href="#方式三" class="headerlink" title="方式三"></a>方式三</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker create -v $PWD/data:/var/mydata --name data_container ubuntu</span><br></pre></td></tr></table></figure>
-<p>👆创建数据目录挂载与本地的挂载<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -it --volumes-from data_container ubuntu /bin/bash</span><br></pre></td></tr></table></figure></p>
-<p>👆进入到Docker容器内部去对数据进行修改，同时可以看到本地也会进行相应修改</p>
-<h4 id="Registry-镜像仓库-共享资源"><a href="#Registry-镜像仓库-共享资源" class="headerlink" title="Registry(镜像仓库) - 共享资源"></a>Registry(镜像仓库) - 共享资源</h4><p>官方仓库(Docker Hub)，国内的一些仓库(daocloud，时速云，aliyun)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">docker search &lt;image&gt;</span><br><span class="line">docker pull &lt;image&gt;</span><br><span class="line">docker push &lt;image&gt;</span><br><span class="line">docker tag &lt;old_image&gt; &lt;new_image&gt;</span><br></pre></td></tr></table></figure></p>
-<p>👆搜索、拉取、发布、改变image的名字</p>
-<h4 id="docker-compose-多容器app"><a href="#docker-compose-多容器app" class="headerlink" title="docker-compose(多容器app)"></a>docker-compose(多容器app)</h4><h5 id="Linux环境下安装docker-compose-Mac-Windows无需此步骤-详情请见"><a href="#Linux环境下安装docker-compose-Mac-Windows无需此步骤-详情请见" class="headerlink" title="Linux环境下安装docker-compose(Mac/Windows无需此步骤)详情请见"></a>Linux环境下安装docker-compose(Mac/Windows无需此步骤)<a href="https://docs.docker.com/compose/install/" target="_blank" rel="noopener">详情请见</a></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo curl -L &quot;https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose</span><br><span class="line">sudo chmod a+x /usr/local/bin/docker-compose</span><br></pre></td></tr></table></figure>
-<h5 id="Commands"><a href="#Commands" class="headerlink" title="Commands"></a>Commands</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">docker-compose build</span><br><span class="line">docker-compose up -d</span><br><span class="line">docker-compose stop</span><br><span class="line">docker-compose rm</span><br></pre></td></tr></table></figure>
-<p>👆多容器app的image创建、daemon启动服务、停止、删除服务中的各个容器</p>
-<h5 id="docker-compose-yml常用命令"><a href="#docker-compose-yml常用命令" class="headerlink" title="docker-compose.yml常用命令"></a>docker-compose.yml常用命令</h5><p>build 本地创建镜像<br>command 覆盖缺省命令<br>depends_on 连接容器<br>ports 暴露端口<br>volumes 卷<br>image 拉取镜像</p>
-<h3 id="ElasticSearch"><a href="#ElasticSearch" class="headerlink" title="ElasticSearch"></a>ElasticSearch</h3><h4 id="简介-1"><a href="#简介-1" class="headerlink" title="简介"></a>简介</h4><p>全文搜索引擎，能够快速储存、搜索和分析海量数据，通常可以满足大量站内搜索的需求，例如维基百科、Github、Stack Overflow。不需要建表、配置字段等；数据可以JSON格式存储；原生支持搜索，不需要拼装查询语句。</p>
-<h4 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h4><p>方法一: 从网站下载安装包、配置、运行<br>方法二: 直接使用Docker拉取对应版本的elasticsearch<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker pull docker.elastic.co/elasticsearch/elasticsearch:7.6.2</span><br><span class="line">docker run -p 9200:9200 -p 9300:9300 -e &quot;discovery.type=single-node&quot; docker.elastic.co/elasticsearch/elasticsearch:7.6.2</span><br></pre></td></tr></table></figure></p>
-<p>👆启动单点模式的elasticearch(可用于简单搜索)，端口9200</p>
-<h4 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h4><p>&lt;server&gt;:9200/index/type/id<br>index -&gt; database<br>type -&gt; table<br>id -&gt; JSON obj<br>其中，index和type无需预先创建；type中的数据类型可以不一致。<br>在elasticsearch7中，为了解决不同type的字段重名问题，type概念被移除了。</p>
-<h4 id="GET-PUT-POST-DELETE-REST"><a href="#GET-PUT-POST-DELETE-REST" class="headerlink" title="GET, PUT, POST, DELETE (REST)"></a>GET, PUT, POST, DELETE (REST)</h4><p>GET -&gt; &lt;server&gt;:9200/index/type/_search  表示搜索在当前index的type下的全部对象<br>GET -&gt; &lt;server&gt;:9200/index/type/_search?q=xxxxx  表示搜索在当前index的type下含有完整xxxxx的对象<br>GET -&gt; &lt;server&gt;:9200/index/type/_mapping  配置类型<br>PUT/POST -&gt; &lt;server&gt;:9200/index/type/id  创建/修改数据(不加id只能用POST来进行上传，id会随机分配)</p>
-<h4 id="Coding-Go语言"><a href="#Coding-Go语言" class="headerlink" title="Coding (Go语言)"></a>Coding (Go语言)</h4><h5 id="Package-Managers-import-“github-com-olivere-elastic-v7”"><a href="#Package-Managers-import-“github-com-olivere-elastic-v7”" class="headerlink" title="Package Managers (import “github.com/olivere/elastic/v7”)"></a>Package Managers (import “github.com/olivere/elastic/v7”)</h5><p><a href="https://github.com/olivere/elastic" target="_blank" rel="noopener">👇(适合新手学习，非官方，抽象更简单)</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">go get github.com/olivere/elastic/v7</span><br></pre></td></tr></table></figure></p>
-<h5 id="常用方法示例"><a href="#常用方法示例" class="headerlink" title="常用方法示例"></a>常用方法示例</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// Creates a new elasticsearch client</span><br><span class="line">client, err := elastic.NewClient(</span><br><span class="line">	// Must turn off sniff in docker</span><br><span class="line">	elastic.SetSniff(false))</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// Stores the data (create/modify)</span><br><span class="line">resp, err := client.Index().</span><br><span class="line">	Index(&quot;example&quot;).</span><br><span class="line">	Type(&quot;exp&quot;).</span><br><span class="line">	Id(&quot;1&quot;).</span><br><span class="line">	BodyJson(item).</span><br><span class="line">	Do(context.Background())</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// Gets the data</span><br><span class="line">resp, err := client.Get().</span><br><span class="line">	Index(&quot;example&quot;).</span><br><span class="line">	Type(&quot;exp&quot;).</span><br><span class="line">	Id(&quot;1&quot;).</span><br><span class="line">	Do(context.Background())</span><br></pre></td></tr></table></figure>
-<h3 id="版权所有"><a href="#版权所有" class="headerlink" title="版权所有"></a>版权所有</h3><p>&emsp;&emsp;仅供交流学习，禁止转载商用！</p>
+        <p><img src="/Developer-Tools/kubernetes-basic/Kubernetes.png" width="100%" height="100%" alt="git"><br><a id="more"></a></p>
+<h3 id="Kubernetes-k8s"><a href="#Kubernetes-k8s" class="headerlink" title="Kubernetes (k8s)"></a>Kubernetes (k8s)</h3><h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>面向云原生应用 - 以Google Borg(Google内部容器管理平台)为原型重新设计和实现的容器管理和编排调用工具。</p>
+<h4 id="云原生模式"><a href="#云原生模式" class="headerlink" title="云原生模式"></a>云原生模式</h4><p>随着容器技术的出现以及应用面临的外部环境变化，云原生成为一种应用云化开发、部署和运行的主流方式。<br>容器 - 应用部署、运行和管理的基本单元<br>基础 - 应用的容器化和微服务化<br>核心 - 借助容器管理自动化平台进行动态编排和资源优化利用</p>
+<h4 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h4><p>容器编排管理平台、微服务支撑平台、可移植的“云平台”</p>
+<h3 id="Kubernetes基本概念"><a href="#Kubernetes基本概念" class="headerlink" title="Kubernetes基本概念"></a>Kubernetes基本概念</h3><h4 id="Pods"><a href="#Pods" class="headerlink" title="Pods"></a>Pods</h4><p>一个pod是k8s中应用的最小单元，pod可以由多个容器组成，有如下特性:<br>1.单一IP地址<br>2.共享localhost<br>3.共享网络端口<br>4.共享卷(volumes)<br>5.共享IPC(inter-process communication)空间<br>在pod中的容器是通过localhost进行通信，而pod之间的通信是由services来实现的。</p>
+<h4 id="ReplicaSets"><a href="#ReplicaSets" class="headerlink" title="ReplicaSets"></a>ReplicaSets</h4><p>由于pods具有非永恒性(如果终止，便代表结束)，那么我们如何处理同个pod的多个版本运行？<br>引入了replication controller，该控制器位于pod资源类型的上层来对其进行控制，可以有效防止失败/错误的发生；<br>由此有了replica set，代表指定数量的需要运行的pods的集合。</p>
+<h4 id="Services"><a href="#Services" class="headerlink" title="Services"></a>Services</h4><p>在k8s中，一个服务(service)是pods之间通信的基础，就像pods之间的网络抽象。<br>注：服务允许k8s为pods设置单一的DNS记录。</p>
+<h4 id="Deployments"><a href="#Deployments" class="headerlink" title="Deployments"></a>Deployments</h4><p>部署资源类型(deployment resource type)位于replica set的上层操作。<br>一般来说，升级需要替换整个replica set，这样会导致应用停机进行升级；因此，k8s采用滚动升级(rolling upgrade), 使得我们可以不用停机就可以进行升级。</p>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>Deployments控制replica sets，然后replica sets控制pods。<br>注意：使用部署资源类型时仍然需要用服务访问。</p>
+<h3 id="k8s相关工具"><a href="#k8s相关工具" class="headerlink" title="k8s相关工具"></a>k8s相关工具</h3><h4 id="Install-and-Set-Up-kubectl-https-kubernetes-io-docs-tasks-tools-install-kubectl-install-kubectl-on-macos"><a href="#Install-and-Set-Up-kubectl-https-kubernetes-io-docs-tasks-tools-install-kubectl-install-kubectl-on-macos" class="headerlink" title="(Install and Set Up kubectl)[https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-macos]"></a>(Install and Set Up kubectl)[<a href="https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-macos]" target="_blank" rel="noopener">https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-macos]</a></h4><p>Kubernetes命令行工具，允许用户使用指令来管理k8s集群。</p>
+<h4 id="Install-Minikube-https-kubernetes-io-docs-tasks-tools-install-minikube"><a href="#Install-Minikube-https-kubernetes-io-docs-tasks-tools-install-minikube" class="headerlink" title="(Install Minikube)[https://kubernetes.io/docs/tasks/tools/install-minikube/]"></a>(Install Minikube)[<a href="https://kubernetes.io/docs/tasks/tools/install-minikube/]" target="_blank" rel="noopener">https://kubernetes.io/docs/tasks/tools/install-minikube/]</a></h4><p>Minikube是为了开发者能在个人电脑上运行k8s而提供的一套工具，Go语言编写，通过调用虚拟化管理程序，创建出一个运行在虚拟机内的单节点集群。</p>
+<h4 id="VM-driver-documentation-https-kubernetes-io-docs-setup-learning-environment-minikube-specifying-the-vm-driver"><a href="#VM-driver-documentation-https-kubernetes-io-docs-setup-learning-environment-minikube-specifying-the-vm-driver" class="headerlink" title="(VM driver documentation)[https://kubernetes.io/docs/setup/learning-environment/minikube/#specifying-the-vm-driver]"></a>(VM driver documentation)[<a href="https://kubernetes.io/docs/setup/learning-environment/minikube/#specifying-the-vm-driver]" target="_blank" rel="noopener">https://kubernetes.io/docs/setup/learning-environment/minikube/#specifying-the-vm-driver]</a></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">minikube start --driver=&lt;driver_name&gt;</span><br></pre></td></tr></table></figure>
+<p>👆Enter the name of the hypervisor you installed in lowercase letters where &lt;driver_name&gt; is mentioned below.<br>Driver is <a href="https://minikube.sigs.k8s.io/docs/drivers/docker/" target="_blank" rel="noopener">Docker</a></p>
+<h3 id="推荐文章"><a href="#推荐文章" class="headerlink" title="推荐文章"></a>推荐文章</h3><ol>
+<li><a href="https://www.kubernetes.org.cn/5025.html" target="_blank" rel="noopener">kubernetes1.13.1+etcd3.3.10+flanneld0.10集群部署</a></li>
+</ol>
 
       
     </div>
@@ -503,12 +471,12 @@
   <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
   <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
 
-  <p><span>本文标题:</span>简单介绍 - Docker和ElasticSearch</p>
+  <p><span>本文标题:</span>Kubernetes基础</p>
   <p><span>文章作者:</span>Lu, Ruihui</p>
-  <p><span>发布时间:</span>2020年04月19日 - 00:54:24</p>
-  <p><span>最后更新:</span>2020年04月23日 - 21:54:17</p>
-  <p><span>原始链接:</span><a href="/Developer-Tools/docker-and-elastic/" title="简单介绍 - Docker和ElasticSearch">http://yoursite.com/Developer-Tools/docker-and-elastic/</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/Developer-Tools/docker-and-elastic/" aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2020年04月27日 - 05:42:23</p>
+  <p><span>最后更新:</span>2020年05月11日 - 02:13:32</p>
+  <p><span>原始链接:</span><a href="/Developer-Tools/kubernetes-basic/" title="Kubernetes基础">http://yoursite.com/Developer-Tools/kubernetes-basic/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/Developer-Tools/kubernetes-basic/" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -568,9 +536,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Docker/" rel="tag"><i class="fa fa-tag"></i> Docker</a>
-          
-            <a href="/tags/ElasticSearch/" rel="tag"><i class="fa fa-tag"></i> ElasticSearch</a>
+            <a href="/tags/Kubernetes/" rel="tag"><i class="fa fa-tag"></i> Kubernetes</a>
           
         </div>
       
@@ -583,8 +549,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/Data-Structure/SegmentTree/" rel="next" title="线段树/区间树(Segment Tree)">
-                <i class="fa fa-chevron-left"></i> 线段树/区间树(Segment Tree)
+              <a href="/Developer-Tools/docker-and-elastic/" rel="next" title="简单介绍 - Docker和ElasticSearch">
+                <i class="fa fa-chevron-left"></i> 简单介绍 - Docker和ElasticSearch
               </a>
             
           </div>
@@ -592,10 +558,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/Developer-Tools/kubernetes-basic/" rel="prev" title="Kubernetes基础">
-                Kubernetes基础 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -794,7 +756,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Docker"><span class="nav-number">1.</span> <span class="nav-text">Docker</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#简介"><span class="nav-number">1.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装"><span class="nav-number">1.2.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#术语"><span class="nav-number">1.3.</span> <span class="nav-text">术语</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Run-it-Terminal-Command"><span class="nav-number">1.4.</span> <span class="nav-text">Run it (Terminal Command)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Modify-and-Commit"><span class="nav-number">1.5.</span> <span class="nav-text">Modify and Commit</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Create-Image-Dockerfile"><span class="nav-number">1.6.</span> <span class="nav-text">Create Image (Dockerfile)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Dockerfile"><span class="nav-number">1.7.</span> <span class="nav-text">Dockerfile</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#语法小结"><span class="nav-number">1.7.1.</span> <span class="nav-text">语法小结</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#举例"><span class="nav-number">1.7.2.</span> <span class="nav-text">举例</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Volume-挂载"><span class="nav-number">1.8.</span> <span class="nav-text">Volume(挂载)</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#方法一"><span class="nav-number">1.8.1.</span> <span class="nav-text">方法一</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#方法二"><span class="nav-number">1.8.2.</span> <span class="nav-text">方法二</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#方式三"><span class="nav-number">1.8.3.</span> <span class="nav-text">方式三</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Registry-镜像仓库-共享资源"><span class="nav-number">1.9.</span> <span class="nav-text">Registry(镜像仓库) - 共享资源</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#docker-compose-多容器app"><span class="nav-number">1.10.</span> <span class="nav-text">docker-compose(多容器app)</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Linux环境下安装docker-compose-Mac-Windows无需此步骤-详情请见"><span class="nav-number">1.10.1.</span> <span class="nav-text">Linux环境下安装docker-compose(Mac/Windows无需此步骤)详情请见</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Commands"><span class="nav-number">1.10.2.</span> <span class="nav-text">Commands</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#docker-compose-yml常用命令"><span class="nav-number">1.10.3.</span> <span class="nav-text">docker-compose.yml常用命令</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ElasticSearch"><span class="nav-number">2.</span> <span class="nav-text">ElasticSearch</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#简介-1"><span class="nav-number">2.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装-1"><span class="nav-number">2.2.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#URL"><span class="nav-number">2.3.</span> <span class="nav-text">URL</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#GET-PUT-POST-DELETE-REST"><span class="nav-number">2.4.</span> <span class="nav-text">GET, PUT, POST, DELETE (REST)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Coding-Go语言"><span class="nav-number">2.5.</span> <span class="nav-text">Coding (Go语言)</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Package-Managers-import-“github-com-olivere-elastic-v7”"><span class="nav-number">2.5.1.</span> <span class="nav-text">Package Managers (import “github.com/olivere/elastic/v7”)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#常用方法示例"><span class="nav-number">2.5.2.</span> <span class="nav-text">常用方法示例</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#版权所有"><span class="nav-number">3.</span> <span class="nav-text">版权所有</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Kubernetes-k8s"><span class="nav-number">1.</span> <span class="nav-text">Kubernetes (k8s)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#简介"><span class="nav-number">1.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#云原生模式"><span class="nav-number">1.2.</span> <span class="nav-text">云原生模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#功能"><span class="nav-number">1.3.</span> <span class="nav-text">功能</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Kubernetes基本概念"><span class="nav-number">2.</span> <span class="nav-text">Kubernetes基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Pods"><span class="nav-number">2.1.</span> <span class="nav-text">Pods</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ReplicaSets"><span class="nav-number">2.2.</span> <span class="nav-text">ReplicaSets</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Services"><span class="nav-number">2.3.</span> <span class="nav-text">Services</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Deployments"><span class="nav-number">2.4.</span> <span class="nav-text">Deployments</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#总结"><span class="nav-number">2.5.</span> <span class="nav-text">总结</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#k8s相关工具"><span class="nav-number">3.</span> <span class="nav-text">k8s相关工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Install-and-Set-Up-kubectl-https-kubernetes-io-docs-tasks-tools-install-kubectl-install-kubectl-on-macos"><span class="nav-number">3.1.</span> <span class="nav-text">(Install and Set Up kubectl)[https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-macos]</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Install-Minikube-https-kubernetes-io-docs-tasks-tools-install-minikube"><span class="nav-number">3.2.</span> <span class="nav-text">(Install Minikube)[https://kubernetes.io/docs/tasks/tools/install-minikube/]</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#VM-driver-documentation-https-kubernetes-io-docs-setup-learning-environment-minikube-specifying-the-vm-driver"><span class="nav-number">3.3.</span> <span class="nav-text">(VM driver documentation)[https://kubernetes.io/docs/setup/learning-environment/minikube/#specifying-the-vm-driver]</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#推荐文章"><span class="nav-number">4.</span> <span class="nav-text">推荐文章</span></a></li></ol></div>
             
 
           </div>
