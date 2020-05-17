@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="RonaldLu&#39;s Blog">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/Developer-Tools/kubernetes-basic/Kubernetes.png">
-<meta property="og:updated_time" content="2020-05-11T09:13:32.405Z">
+<meta property="og:updated_time" content="2020-05-17T18:16:00.599Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Kubernetes基础">
 <meta name="twitter:image" content="http://yoursite.com/Developer-Tools/kubernetes-basic/Kubernetes.png">
@@ -361,8 +361,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2020-05-11T02:13:32-07:00">
-                2020-05-11
+              <time title="Post modified" itemprop="dateModified" datetime="2020-05-17T11:16:00-07:00">
+                2020-05-17
               </time>
             
           </span>
@@ -404,7 +404,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  672
+                  636
                 </span>
               
 
@@ -435,9 +435,9 @@
 <h4 id="Services"><a href="#Services" class="headerlink" title="Services"></a>Services</h4><p>在k8s中，一个服务(service)是pods之间通信的基础，就像pods之间的网络抽象。<br>注：服务允许k8s为pods设置单一的DNS记录。</p>
 <h4 id="Deployments"><a href="#Deployments" class="headerlink" title="Deployments"></a>Deployments</h4><p>部署资源类型(deployment resource type)位于replica set的上层操作。<br>一般来说，升级需要替换整个replica set，这样会导致应用停机进行升级；因此，k8s采用滚动升级(rolling upgrade), 使得我们可以不用停机就可以进行升级。</p>
 <h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>Deployments控制replica sets，然后replica sets控制pods。<br>注意：使用部署资源类型时仍然需要用服务访问。</p>
-<h3 id="k8s相关工具"><a href="#k8s相关工具" class="headerlink" title="k8s相关工具"></a>k8s相关工具</h3><h4 id="Install-and-Set-Up-kubectl-https-kubernetes-io-docs-tasks-tools-install-kubectl-install-kubectl-on-macos"><a href="#Install-and-Set-Up-kubectl-https-kubernetes-io-docs-tasks-tools-install-kubectl-install-kubectl-on-macos" class="headerlink" title="(Install and Set Up kubectl)[https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-macos]"></a>(Install and Set Up kubectl)[<a href="https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-macos]" target="_blank" rel="noopener">https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-macos]</a></h4><p>Kubernetes命令行工具，允许用户使用指令来管理k8s集群。</p>
-<h4 id="Install-Minikube-https-kubernetes-io-docs-tasks-tools-install-minikube"><a href="#Install-Minikube-https-kubernetes-io-docs-tasks-tools-install-minikube" class="headerlink" title="(Install Minikube)[https://kubernetes.io/docs/tasks/tools/install-minikube/]"></a>(Install Minikube)[<a href="https://kubernetes.io/docs/tasks/tools/install-minikube/]" target="_blank" rel="noopener">https://kubernetes.io/docs/tasks/tools/install-minikube/]</a></h4><p>Minikube是为了开发者能在个人电脑上运行k8s而提供的一套工具，Go语言编写，通过调用虚拟化管理程序，创建出一个运行在虚拟机内的单节点集群。</p>
-<h4 id="VM-driver-documentation-https-kubernetes-io-docs-setup-learning-environment-minikube-specifying-the-vm-driver"><a href="#VM-driver-documentation-https-kubernetes-io-docs-setup-learning-environment-minikube-specifying-the-vm-driver" class="headerlink" title="(VM driver documentation)[https://kubernetes.io/docs/setup/learning-environment/minikube/#specifying-the-vm-driver]"></a>(VM driver documentation)[<a href="https://kubernetes.io/docs/setup/learning-environment/minikube/#specifying-the-vm-driver]" target="_blank" rel="noopener">https://kubernetes.io/docs/setup/learning-environment/minikube/#specifying-the-vm-driver]</a></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">minikube start --driver=&lt;driver_name&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="k8s相关工具"><a href="#k8s相关工具" class="headerlink" title="k8s相关工具"></a>k8s相关工具</h3><h4 id="Install-and-Set-Up-kubectl"><a href="#Install-and-Set-Up-kubectl" class="headerlink" title="Install and Set Up kubectl"></a><a href="https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-macos" target="_blank" rel="noopener">Install and Set Up kubectl</a></h4><p>Kubernetes命令行工具，允许用户使用指令来管理k8s集群。</p>
+<h4 id="Install-Minikube"><a href="#Install-Minikube" class="headerlink" title="Install Minikube"></a><a href="https://kubernetes.io/docs/tasks/tools/install-minikube/" target="_blank" rel="noopener">Install Minikube</a></h4><p>Minikube是为了开发者能在个人电脑上运行k8s而提供的一套工具，Go语言编写，通过调用虚拟化管理程序，创建出一个运行在虚拟机内的单节点集群。</p>
+<h4 id="VM-driver-documentation"><a href="#VM-driver-documentation" class="headerlink" title="VM driver documentation"></a><a href="https://kubernetes.io/docs/setup/learning-environment/minikube/#specifying-the-vm-driver" target="_blank" rel="noopener">VM driver documentation</a></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">minikube start --driver=&lt;driver_name&gt;</span><br></pre></td></tr></table></figure>
 <p>👆Enter the name of the hypervisor you installed in lowercase letters where &lt;driver_name&gt; is mentioned below.<br>Driver is <a href="https://minikube.sigs.k8s.io/docs/drivers/docker/" target="_blank" rel="noopener">Docker</a></p>
 <h3 id="推荐文章"><a href="#推荐文章" class="headerlink" title="推荐文章"></a>推荐文章</h3><ol>
 <li><a href="https://www.kubernetes.org.cn/5025.html" target="_blank" rel="noopener">kubernetes1.13.1+etcd3.3.10+flanneld0.10集群部署</a></li>
@@ -474,7 +474,7 @@
   <p><span>本文标题:</span>Kubernetes基础</p>
   <p><span>文章作者:</span>Lu, Ruihui</p>
   <p><span>发布时间:</span>2020年04月27日 - 05:42:23</p>
-  <p><span>最后更新:</span>2020年05月11日 - 02:13:32</p>
+  <p><span>最后更新:</span>2020年05月17日 - 11:16:00</p>
   <p><span>原始链接:</span><a href="/Developer-Tools/kubernetes-basic/" title="Kubernetes基础">http://yoursite.com/Developer-Tools/kubernetes-basic/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/Developer-Tools/kubernetes-basic/" aria-label="复制成功！"></i></span>
   </p>
@@ -756,7 +756,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Kubernetes-k8s"><span class="nav-number">1.</span> <span class="nav-text">Kubernetes (k8s)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#简介"><span class="nav-number">1.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#云原生模式"><span class="nav-number">1.2.</span> <span class="nav-text">云原生模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#功能"><span class="nav-number">1.3.</span> <span class="nav-text">功能</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Kubernetes基本概念"><span class="nav-number">2.</span> <span class="nav-text">Kubernetes基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Pods"><span class="nav-number">2.1.</span> <span class="nav-text">Pods</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ReplicaSets"><span class="nav-number">2.2.</span> <span class="nav-text">ReplicaSets</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Services"><span class="nav-number">2.3.</span> <span class="nav-text">Services</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Deployments"><span class="nav-number">2.4.</span> <span class="nav-text">Deployments</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#总结"><span class="nav-number">2.5.</span> <span class="nav-text">总结</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#k8s相关工具"><span class="nav-number">3.</span> <span class="nav-text">k8s相关工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Install-and-Set-Up-kubectl-https-kubernetes-io-docs-tasks-tools-install-kubectl-install-kubectl-on-macos"><span class="nav-number">3.1.</span> <span class="nav-text">(Install and Set Up kubectl)[https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-macos]</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Install-Minikube-https-kubernetes-io-docs-tasks-tools-install-minikube"><span class="nav-number">3.2.</span> <span class="nav-text">(Install Minikube)[https://kubernetes.io/docs/tasks/tools/install-minikube/]</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#VM-driver-documentation-https-kubernetes-io-docs-setup-learning-environment-minikube-specifying-the-vm-driver"><span class="nav-number">3.3.</span> <span class="nav-text">(VM driver documentation)[https://kubernetes.io/docs/setup/learning-environment/minikube/#specifying-the-vm-driver]</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#推荐文章"><span class="nav-number">4.</span> <span class="nav-text">推荐文章</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Kubernetes-k8s"><span class="nav-number">1.</span> <span class="nav-text">Kubernetes (k8s)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#简介"><span class="nav-number">1.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#云原生模式"><span class="nav-number">1.2.</span> <span class="nav-text">云原生模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#功能"><span class="nav-number">1.3.</span> <span class="nav-text">功能</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Kubernetes基本概念"><span class="nav-number">2.</span> <span class="nav-text">Kubernetes基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Pods"><span class="nav-number">2.1.</span> <span class="nav-text">Pods</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ReplicaSets"><span class="nav-number">2.2.</span> <span class="nav-text">ReplicaSets</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Services"><span class="nav-number">2.3.</span> <span class="nav-text">Services</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Deployments"><span class="nav-number">2.4.</span> <span class="nav-text">Deployments</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#总结"><span class="nav-number">2.5.</span> <span class="nav-text">总结</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#k8s相关工具"><span class="nav-number">3.</span> <span class="nav-text">k8s相关工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Install-and-Set-Up-kubectl"><span class="nav-number">3.1.</span> <span class="nav-text">Install and Set Up kubectl</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Install-Minikube"><span class="nav-number">3.2.</span> <span class="nav-text">Install Minikube</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#VM-driver-documentation"><span class="nav-number">3.3.</span> <span class="nav-text">VM driver documentation</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#推荐文章"><span class="nav-number">4.</span> <span class="nav-text">推荐文章</span></a></li></ol></div>
             
 
           </div>
@@ -804,7 +804,7 @@
 <div>
   <!-- The number of total words -->
   <i class="fa fa-pencil"></i>
-  <span class="post-count">This site has 7.8k words totally</span>
+  <span class="post-count">This site has 7.7k words totally</span>
 </div>
 
 
