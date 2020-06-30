@@ -1990,7 +1990,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #45faff;
+  background: #7e14ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3321,4 +3321,7 @@ pre .javascript .function {
 }
 .highlight:hover .btn-copy {
   opacity: 1;
+}
+.site-overview {
+  text-align: center;
 }
