@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="RonaldLu&#39;s Blog">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/Interview-Questions/frontend-interview-js/js.png">
-<meta property="og:updated_time" content="2020-08-04T04:11:58.504Z">
+<meta property="og:updated_time" content="2020-08-04T04:14:38.306Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端面试 —— JavaScript基础篇">
 <meta name="twitter:image" content="http://yoursite.com/Interview-Questions/frontend-interview-js/js.png">
@@ -364,7 +364,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2020-08-03T21:11:58-07:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2020-08-03T21:14:38-07:00">
                 2020-08-03
               </time>
             
@@ -407,7 +407,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  4.3k
+                  4.2k
                 </span>
               
 
@@ -433,7 +433,7 @@
 <h4 id="JS中基本数据类型和引用类型在内存上的区别？"><a href="#JS中基本数据类型和引用类型在内存上的区别？" class="headerlink" title="JS中基本数据类型和引用类型在内存上的区别？"></a>JS中基本数据类型和引用类型在内存上的区别？</h4><p>&emsp;&emsp;基本数据类型是存储在栈内存中的简单数据段，其变量和数据以及存储空间是一一对应的；而引用类型是存储在堆内存中的对象，通常来说可以多个引用类型变量指向同一存储空间块</p>
 <h4 id="null和undefined的区别？"><a href="#null和undefined的区别？" class="headerlink" title="null和undefined的区别？"></a>null和undefined的区别？</h4><p>&emsp;&emsp;null表示的是一个空指针，也就是“无”的对象，转为数值是0；而undefined表示的是“无”的原始值，转为数值是NaN。当声明的变量还未被初始化时，默认值时undefined，而null通常来说是空的对象</p>
 <h4 id="如何判断一个对象是否为空对象？"><a href="#如何判断一个对象是否为空对象？" class="headerlink" title="如何判断一个对象是否为空对象？"></a>如何判断一个对象是否为空对象？</h4><p>&emsp;&emsp;a. 利用for…in遍历对象属性，如果for…in执行，则非空对象；否则空对象<br>&emsp;&emsp;b. 利用JSON.stringify()将检测对象转换成JSON字符串，如：JSON.stringify(target) === ‘{}’<br>&emsp;&emsp;c. 利用ES6新增的Object.keys()方法，如果目标是空对象，该方法会返回一个空数组</p>
-<h4 id="原型规则和原型链？"><a href="#原型规则和原型链？" class="headerlink" title="原型规则和原型链？"></a>原型规则和原型链？</h4><p>&emsp;&emsp;a. 所有的引用类型（数组、对象、函数），都具有对象特性，即可自由扩展属性（除了”null”以外）<br>&emsp;&emsp;b. 所有的引用类型（数组、对象、函数），都有一个<strong>proto</strong>（隐式原型 &lt;- 浏览器）属性，属性值是一个普通的对象<br>&emsp;&emsp;c. 所有的函数都有一个prototype（显式原型 &lt;- 浏览器）属性，属性值是一个普通的对象<br>&emsp;&emsp;d. 所有的引用类型（数组、对象、函数），<strong>proto</strong>属性指向（===）它的构造函数的prototype属性<br>&emsp;&emsp;e. 当试图得到一个对象（引用类型）的某个属性或方法时，如果这个对象本身没有，那么会去<strong>proto</strong>（对应构造函数的prototype）中去寻找；如果依然不存在，则会去构造函数上一层的prototype继续查找，直到找到目标属性/方法，或者到该条链路径的顶点，这条查找的链路径就是原型链</p>
+<h4 id="原型规则和原型链？"><a href="#原型规则和原型链？" class="headerlink" title="原型规则和原型链？"></a>原型规则和原型链？</h4><p>&emsp;&emsp;a. 所有的引用类型（数组、对象、函数），都具有对象特性，即可自由扩展属性（除了”null”以外）<br>&emsp;&emsp;b. 所有的引用类型（数组、对象、函数），都有一个<strong>proto</strong>（隐式原型）属性，属性值是一个普通的对象<br>&emsp;&emsp;c. 所有的函数都有一个prototype（显式原型）属性，属性值是一个普通的对象<br>&emsp;&emsp;d. 所有的引用类型（数组、对象、函数），<strong>proto</strong>属性指向（===）它的构造函数的prototype属性<br>&emsp;&emsp;e. 当试图得到一个对象（引用类型）的某个属性或方法时，如果这个对象本身没有，那么会去<strong>proto</strong>（对应构造函数的prototype）中去寻找；如果依然不存在，则会去构造函数上一层的prototype继续查找，直到找到目标属性/方法，或者到该条链路径的顶点，这条查找的链路径就是原型链</p>
 <h4 id="typeof、instanceof和valueOf区别？"><a href="#typeof、instanceof和valueOf区别？" class="headerlink" title="typeof、instanceof和valueOf区别？"></a>typeof、instanceof和valueOf区别？</h4><p>&emsp;&emsp;typeof操作符返回字符串，表示未经求值的操作数的类型，返回值为number、boolean、string、undefined、object、function、symbol（ES6）<br>&emsp;&emsp;A instanceof B用来判断A是否是构造函数B的一个实例或者其子类的一个实例对象<br>&emsp;&emsp;valueOf其实就是返回对象的原始值</p>
 <h4 id="instanceof的原理？"><a href="#instanceof的原理？" class="headerlink" title="instanceof的原理？"></a>instanceof的原理？</h4><p>&emsp;&emsp;判断某个构造函数的显式原型（prototype）属性所指向的对象是否存在于要检测对象的原型链上</p>
 <h4 id="new操作符的原理？"><a href="#new操作符的原理？" class="headerlink" title="new操作符的原理？"></a>new操作符的原理？</h4><p>&emsp;&emsp;a. 生成一个新的对象，并将this指向这个对象<br>&emsp;&emsp;b. 执行构造函数代码，并根据传入参数对this的相应属性进行赋值<br>&emsp;&emsp;c. 默认将this对象返回（因此无需显式调用return语句），并赋值给对应的实例变量</p>
@@ -452,7 +452,7 @@
 <h4 id="attribute和property的区别？"><a href="#attribute和property的区别？" class="headerlink" title="attribute和property的区别？"></a>attribute和property的区别？</h4><p>&emsp;&emsp;attribute是指HTML元素上的属性，使用setAttribute()和getAttribute()来设置和获取；而property是JS对象的属性（获取的DOM节点在JS中是一个对象），设置和获取与常规JS对象属性无异</p>
 <h4 id="window-onload和document-DOMContentLoaded两个事件的区别？"><a href="#window-onload和document-DOMContentLoaded两个事件的区别？" class="headerlink" title="window.onload和document.DOMContentLoaded两个事件的区别？"></a>window.onload和document.DOMContentLoaded两个事件的区别？</h4><p>&emsp;&emsp;window.onload在页面的全部资源（包括样式表、图片、音频、子框架…）加载完后执行；而DOMContentLoaded是在HTML文档加载和解析后执行，即DOM渲染完执行，不需要等待其他资源加载<br>&emsp;&emsp;DOM完整解析过程<a href="https://www.jianshu.com/p/1a8a7e698447" target="_blank" rel="noopener">https://www.jianshu.com/p/1a8a7e698447</a></p>
 <h4 id="和-的区别？"><a href="#和-的区别？" class="headerlink" title="== 和 === 的区别？"></a>== 和 === 的区别？</h4><p>&emsp;&emsp;== 是弱相等，会先进行强制类型转换，然后进行值比较；=== 是严格相等，会比较两个变量的类型和值</p>
-<h4 id="？"><a href="#？" class="headerlink" title="[], [] === [], [] == []？"></a>[], [] === [], [] == []？</h4><p>&emsp;&emsp;空数组[]在JS中也是一个object，因此用在判断条件时会转换成true；但是任意值和布尔值比较时，都会将两边的值转换成Number: [] -&gt; 0, false -&gt; 0, true -&gt; 1<br>&emsp;&emsp;[] == [] 和 [] === [] 都是false，因为 [] 属于引用类型，引用类型的比较是需要比较两个引用值在内存中是否指向同一对象，两个空数组互不相关，因此都是false</p>
+<h4 id="？"><a href="#？" class="headerlink" title="[], [] === [], [] == []？"></a>[], [] === [], [] == []？</h4><p>&emsp;&emsp;空数组[]在JS中也是一个object，因此用在判断条件时会转换成true；但是任意值和布尔值比较时，都会将两边的值转换成Number: [] = 0, false = 0, true = 1<br>&emsp;&emsp;[] == [] 和 [] === [] 都是false，因为 [] 属于引用类型，引用类型的比较是需要比较两个引用值在内存中是否指向同一对象，两个空数组互不相关，因此都是false</p>
 <h4 id="undefined-undefined-undefined-undefined？"><a href="#undefined-undefined-undefined-undefined？" class="headerlink" title="undefined == undefined, undefined === undefined？"></a>undefined == undefined, undefined === undefined？</h4><p>&emsp;&emsp;undefined == undefined, undefined === undefined 都是true，因为undefined在JS是基本类型，也就是值类型，且只有一个值，所以无论是值和类型都是相等的。</p>
 <h4 id="JS的作用域有几种？-是不是作用域？"><a href="#JS的作用域有几种？-是不是作用域？" class="headerlink" title="JS的作用域有几种？{}是不是作用域？"></a>JS的作用域有几种？{}是不是作用域？</h4><p>&emsp;&emsp;通常来说，作用域被分为全局作用域和局部作用域，全局作用域就是在代码块之外的部分，而局部作用域在ES6之前是只有函数作用域一种的，而且在函数作用域中声明变量时，必须使用var关键字，否则会因为变量提升成为全局变量。ES6，引入了let和const，拥有块级作用域（局部作用域）了，因此{}代码块是作用域(ES6)，而ES5中只有{}是函数的时候才算做作用域</p>
 <h4 id="DOM事件绑定的几种方式（尤其是DOM0和DOM2）？"><a href="#DOM事件绑定的几种方式（尤其是DOM0和DOM2）？" class="headerlink" title="DOM事件绑定的几种方式（尤其是DOM0和DOM2）？"></a>DOM事件绑定的几种方式（尤其是DOM0和DOM2）？</h4><p>&emsp;&emsp;a. DOM元素中直接绑定；b. 在JS代码中使用属性绑定（DOM0级绑定）；c. 绑定事件监听函数（DOM2级绑定）<br>&emsp;&emsp;DOM0级事件处理程序（属性绑定，兼容性好）：将一个函数赋值给一个事件处理程序属性。特点：简单，跨浏览器。例如：btn.onclick = function() {xxx}, btn.onclick = null<br>&emsp;&emsp;DOM2级事件处理程序（函数绑定，兼容性不好）：使用addEventListener()和removeEventListener()来绑定和解绑事件的，可以处理多个事件处理程序，并按照顺序触发，移除事件和绑定事件传入的参数相同，绑定事件时使用匿名函数的话将无法移除<br>&emsp;&emsp;DOM0级事件会覆盖，DOM2不会覆盖，会依次执行，DOM0级和DOM2级可以共存，不会相互覆盖</p>
@@ -506,7 +506,7 @@
   <p><span>本文标题:</span>前端面试 —— JavaScript基础篇</p>
   <p><span>文章作者:</span>Lu, Ruihui</p>
   <p><span>发布时间:</span>2020年07月23日 - 18:21:52</p>
-  <p><span>最后更新:</span>2020年08月03日 - 21:11:58</p>
+  <p><span>最后更新:</span>2020年08月03日 - 21:14:38</p>
   <p><span>原始链接:</span><a href="/Interview-Questions/frontend-interview-js/" title="前端面试 —— JavaScript基础篇">http://yoursite.com/Interview-Questions/frontend-interview-js/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/Interview-Questions/frontend-interview-js/" aria-label="复制成功！"></i></span>
   </p>
