@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="RonaldLu&#39;s Blog">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/Interview-Questions/frontend-interview-js/js.png">
-<meta property="og:updated_time" content="2020-08-04T02:55:27.012Z">
+<meta property="og:updated_time" content="2020-08-04T04:09:07.172Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端面试 —— JavaScript基础篇">
 <meta name="twitter:image" content="http://yoursite.com/Interview-Questions/frontend-interview-js/js.png">
@@ -364,7 +364,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2020-08-03T19:55:27-07:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2020-08-03T21:09:07-07:00">
                 2020-08-03
               </time>
             
@@ -407,7 +407,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  4.2k
+                  4.3k
                 </span>
               
 
@@ -452,7 +452,7 @@
 <h4 id="attribute和property的区别？"><a href="#attribute和property的区别？" class="headerlink" title="attribute和property的区别？"></a>attribute和property的区别？</h4><p>&emsp;&emsp;attribute是指HTML元素上的属性，使用setAttribute()和getAttribute()来设置和获取；而property是JS对象的属性（获取的DOM节点在JS中是一个对象），设置和获取与常规JS对象属性无异</p>
 <h4 id="window-onload和document-DOMContentLoaded两个事件的区别？"><a href="#window-onload和document-DOMContentLoaded两个事件的区别？" class="headerlink" title="window.onload和document.DOMContentLoaded两个事件的区别？"></a>window.onload和document.DOMContentLoaded两个事件的区别？</h4><p>&emsp;&emsp;window.onload在页面的全部资源（包括样式表、图片、音频、子框架…）加载完后执行；而DOMContentLoaded是在HTML文档加载和解析后执行，即DOM渲染完执行，不需要等待其他资源加载<br>&emsp;&emsp;DOM完整解析过程<a href="https://www.jianshu.com/p/1a8a7e698447" target="_blank" rel="noopener">https://www.jianshu.com/p/1a8a7e698447</a></p>
 <h4 id="和-的区别？"><a href="#和-的区别？" class="headerlink" title="== 和 === 的区别？"></a>== 和 === 的区别？</h4><p>&emsp;&emsp;== 是弱相等，会先进行强制类型转换，然后进行值比较；=== 是严格相等，会比较两个变量的类型和值</p>
-<h4 id="？"><a href="#？" class="headerlink" title="[], [] === [], [] == []？"></a>[], [] === [], [] == []？</h4><p>&emsp;&emsp;空数组[]在JS中也是一个object，因此用在判断条件时会转换成true；但是任意值和布尔值比较时，都会将两边的值转换成Number: [] -&gt; 0, false -&gt; 0, true -&gt; 1<br>&emsp;&emsp;[] == [] 和 [] === [] 都是false，因为[]属于引用类型，引用类型的比较是需要比较两个引用值在内存中是否指向同一对象，此[]非彼[]，互不相关，因此都是false</p>
+<h4 id="？"><a href="#？" class="headerlink" title="[], [] === [], [] == []？"></a>[], [] === [], [] == []？</h4><p>&emsp;&emsp;空数组[]在JS中也是一个object，因此用在判断条件时会转换成true；但是任意值和布尔值比较时，都会将两边的值转换成Number: [] -&gt; 0, false -&gt; 0, true -&gt; 1<br>&emsp;&emsp;[] == [] 和 [] === [] 都是false，因为 [] 属于引用类型，引用类型的比较是需要比较两个引用值在内存中是否指向同一对象，两个空数组互不相关，因此都是false</p>
 <h4 id="undefined-undefined-undefined-undefined？"><a href="#undefined-undefined-undefined-undefined？" class="headerlink" title="undefined == undefined, undefined === undefined？"></a>undefined == undefined, undefined === undefined？</h4><p>&emsp;&emsp;undefined == undefined, undefined === undefined 都是true，因为undefined在JS是基本类型，也就是值类型，且只有一个值，所以无论是值和类型都是相等的。</p>
 <h4 id="JS的作用域有几种？-是不是作用域？"><a href="#JS的作用域有几种？-是不是作用域？" class="headerlink" title="JS的作用域有几种？{}是不是作用域？"></a>JS的作用域有几种？{}是不是作用域？</h4><p>&emsp;&emsp;通常来说，作用域被分为全局作用域和局部作用域，全局作用域就是在代码块之外的部分，而局部作用域在ES6之前是只有函数作用域一种的，而且在函数作用域中声明变量时，必须使用var关键字，否则会因为变量提升成为全局变量。ES6，引入了let和const，拥有块级作用域（局部作用域）了，因此{}代码块是作用域(ES6)，而ES5中只有{}是函数的时候才算做作用域</p>
 <h4 id="DOM事件绑定的几种方式（尤其是DOM0和DOM2）？"><a href="#DOM事件绑定的几种方式（尤其是DOM0和DOM2）？" class="headerlink" title="DOM事件绑定的几种方式（尤其是DOM0和DOM2）？"></a>DOM事件绑定的几种方式（尤其是DOM0和DOM2）？</h4><p>&emsp;&emsp;a. DOM元素中直接绑定；b. 在JS代码中使用属性绑定（DOM0级绑定）；c. 绑定事件监听函数（DOM2级绑定）<br>&emsp;&emsp;DOM0级事件处理程序（属性绑定，兼容性好）：将一个函数赋值给一个事件处理程序属性。特点：简单，跨浏览器。例如：btn.onclick = function() {xxx}, btn.onclick = null<br>&emsp;&emsp;DOM2级事件处理程序（函数绑定，兼容性不好）：使用addEventListener()和removeEventListener()来绑定和解绑事件的，可以处理多个事件处理程序，并按照顺序触发，移除事件和绑定事件传入的参数相同，绑定事件时使用匿名函数的话将无法移除<br>&emsp;&emsp;DOM0级事件会覆盖，DOM2不会覆盖，会依次执行，DOM0级和DOM2级可以共存，不会相互覆盖</p>
@@ -460,7 +460,7 @@
 <h4 id="JS的事件流模型？"><a href="#JS的事件流模型？" class="headerlink" title="JS的事件流模型？"></a>JS的事件流模型？</h4><p>&emsp;&emsp;事件流描述的是从页面中接受事件的顺序<br>&emsp;&emsp;冒泡事件流：从事件开始的具体元素，一层层向上传播直到window<br>&emsp;&emsp;捕获事件流：捕获的顺序与冒泡刚好相反，是在事件到达目标之前捕获它，而最具体的节点是最后才接收到事件的<br>&emsp;&emsp;DOM事件流：DOM2级规定的事件流包括三个阶段 - 事件捕获阶段、处于目标阶段、事件冒泡阶段。即使DOM2级规定在捕获阶段不会涉及事件目标，但是由于浏览器支持，所以有两个机会在目标对象上操作事件</p>
 <h4 id="普通函数和构造函数的区别？"><a href="#普通函数和构造函数的区别？" class="headerlink" title="普通函数和构造函数的区别？"></a>普通函数和构造函数的区别？</h4><p>&emsp;&emsp;a. 构造函数使用new关键字调用，而普通函数不需要<br>&emsp;&emsp;b. 构造函数内部可以使用this关键字，普通函数内部不建议使用this关键字，因为这时候this指向window全局对象，会无意间增加一些全局变量或函数<br>&emsp;&emsp;c. 构造函数首字母建议大写；普通函数首字母建议小写<br>&emsp;&emsp;d. 构造函数默认会返回this对象，不用显式return，而普通函数要想返回值需要return</p>
 <h4 id="给定一个元素获取其相对于视图窗口的坐标？"><a href="#给定一个元素获取其相对于视图窗口的坐标？" class="headerlink" title="给定一个元素获取其相对于视图窗口的坐标？"></a>给定一个元素获取其相对于视图窗口的坐标？</h4><p>&emsp;&emsp;获取视口坐标可以通过调用元素的getBoundingClientRect()方法，方法返回的一个有left、right、top、bottom属性的对象，分别表示元素四个位置相对于视口的坐标。该方法返回的坐标包含元素的内边距和边框，不包含外边距。</p>
-<h4 id="JS如何实现重载和多态？"><a href="#JS如何实现重载和多态？" class="headerlink" title="JS如何实现重载和多态？"></a>JS如何实现重载和多态？</h4><p>&emsp;&emsp;因为JS本身不支持重载的，所以有：a. 根据arguments个数实现重载，arguments检测传参的个数，然后在执行不同的方式；b. 检测数据类型实现重载，根据传参的数据类型，调用不同的方式，用typeof检测<br>&emsp;&emsp;多态：利用构造函数的prototype属性，来实现多态，代码示例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function makeSound(animal) &#123;</span><br><span class="line">	animal.sound();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function Duck() &#123;&#125;</span><br><span class="line">function Chicken() &#123;&#125;</span><br><span class="line">Duck.prototype.sound = function() &#123;console.log(‘gagaga’);&#125;</span><br><span class="line">Chicken.prototype.sound = function() &#123;console.log(‘gegege’);&#125;</span><br><span class="line"></span><br><span class="line">var d = new Duck();</span><br><span class="line">var c = new Chicken();</span><br><span class="line">makeSound(d);</span><br><span class="line">makeSound(c);</span><br></pre></td></tr></table></figure></p>
+<h4 id="JS如何实现重载和多态？"><a href="#JS如何实现重载和多态？" class="headerlink" title="JS如何实现重载和多态？"></a>JS如何实现重载和多态？</h4><p>&emsp;&emsp;因为JS本身不支持重载的，所以有：a. 根据arguments个数实现重载，arguments检测传参的个数，然后在执行不同的方式；b. 检测数据类型实现重载，根据传参的数据类型，调用不同的方式，用typeof检测<br>&emsp;&emsp;多态：利用构造函数的prototype属性，来实现多态，代码示例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function makeSound(animal) &#123;</span><br><span class="line">	animal.sound();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function Duck() &#123;&#125;</span><br><span class="line">function Chicken() &#123;&#125;</span><br><span class="line">Duck.prototype.sound = function() &#123;console.log(&apos;gagaga&apos;);&#125;</span><br><span class="line">Chicken.prototype.sound = function() &#123;console.log(&apos;gegege&apos;);&#125;</span><br><span class="line"></span><br><span class="line">var d = new Duck();</span><br><span class="line">var c = new Chicken();</span><br><span class="line">makeSound(d);</span><br><span class="line">makeSound(c);</span><br></pre></td></tr></table></figure></p>
 <h4 id="内存泄漏的原因和场景？"><a href="#内存泄漏的原因和场景？" class="headerlink" title="内存泄漏的原因和场景？"></a>内存泄漏的原因和场景？</h4><p>&emsp;&emsp;内存泄漏就是不再被需要的内存，由于某种原因，无法释放<br>&emsp;&emsp;a. 全局变量造成内存泄漏<br>&emsp;&emsp;b. 闭包造成内存泄漏<br>&emsp;&emsp;c. 未销毁的定时器和回调函数造成内存泄漏<br>&emsp;&emsp;d. DOM引用造成内存泄漏</p>
 <h4 id="JS中的事件循环￼？"><a href="#JS中的事件循环￼？" class="headerlink" title="JS中的事件循环￼？"></a>JS中的<a href="https://juejin.im/post/5ddaa00f5188257338075a2e" target="_blank" rel="noopener">事件循环</a>￼？</h4><p>&emsp;&emsp;事件循环机制 = JS异步执行机制</p>
 <h4 id="for…in和forEach的使用场景？"><a href="#for…in和forEach的使用场景？" class="headerlink" title="for…in和forEach的使用场景？"></a>for…in和forEach的使用场景？</h4><p>&emsp;&emsp;forEach循环缺点就是中途无法跳出，但是在多数情况下是遍历数组的首选<br>&emsp;&emsp;for…in遍历数组的缺点：<br>&emsp;&emsp;a. 数组键名通常是数字，而for…in是以字符串作为键名的，如果使用数组的index参与了运算，可能会得到预期不符的结果<br>&emsp;&emsp;b. for…in不仅会遍历数组的键名，还会遍历其他手动添加的键，甚至原型链上的键<br>&emsp;&emsp;c. 某些情况下，for…in循环会以任意顺序遍历键名<br>&emsp;&emsp;总之，for…in适合遍历对象，而非数组</p>
@@ -506,7 +506,7 @@
   <p><span>本文标题:</span>前端面试 —— JavaScript基础篇</p>
   <p><span>文章作者:</span>Lu, Ruihui</p>
   <p><span>发布时间:</span>2020年07月23日 - 18:21:52</p>
-  <p><span>最后更新:</span>2020年08月03日 - 19:55:27</p>
+  <p><span>最后更新:</span>2020年08月03日 - 21:09:07</p>
   <p><span>原始链接:</span><a href="/Interview-Questions/frontend-interview-js/" title="前端面试 —— JavaScript基础篇">http://yoursite.com/Interview-Questions/frontend-interview-js/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/Interview-Questions/frontend-interview-js/" aria-label="复制成功！"></i></span>
   </p>
