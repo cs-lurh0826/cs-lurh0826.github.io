@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="RonaldLu&#39;s Blog">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/Interview-Questions/frontend-interview-js/js.png">
-<meta property="og:updated_time" content="2020-08-04T04:14:38.306Z">
+<meta property="og:updated_time" content="2020-08-04T04:15:35.679Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端面试 —— JavaScript基础篇">
 <meta name="twitter:image" content="http://yoursite.com/Interview-Questions/frontend-interview-js/js.png">
@@ -364,7 +364,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2020-08-03T21:14:38-07:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2020-08-03T21:15:35-07:00">
                 2020-08-03
               </time>
             
@@ -450,7 +450,7 @@
 <h4 id="实现继承的多种方式和优缺点？"><a href="#实现继承的多种方式和优缺点？" class="headerlink" title="实现继承的多种方式和优缺点？"></a>实现继承的多种方式和优缺点？</h4><p>&emsp;&emsp;a. 原型链继承：类型的所有属性都被实例共享；2. 创建子类实例的时候，无法向父类传参。<br>&emsp;&emsp;b. 构造函数继承（经典继承）：在子类型中调用父类型的构造函数并用call改变this指向，优点：避免了类型的属性被所有实例共享；2. 可以向父类型传递参数；缺点：耗内存，新建一个实例，就会新创建所有的方法和属性，不管是否是相同的。<br>&emsp;&emsp;c. 组合继承：a和b混用。缺点是会调用父构造函数两次<br>&emsp;&emsp;d. 原型式继承：模拟Object.create()的实现，将传入参数作为对象的原型。缺点：共享<br>&emsp;&emsp;e. 寄生式继承：创建一个仅用于封装继承过程的函数，函数内部以某种形式增强对象，最后返回对象。跟b缺点一样<br>&emsp;&emsp;f. 寄生组合式继承：将组合继承的两次父构造函数调用，减少为一次<br>&emsp;&emsp;详细请见<a href="https://juejin.im/post/5d28374951882564ca686ef2" target="_blank" rel="noopener">https://juejin.im/post/5d28374951882564ca686ef2</a></p>
 <h4 id="匿名函数的应用场景？"><a href="#匿名函数的应用场景？" class="headerlink" title="匿名函数的应用场景？"></a>匿名函数的应用场景？</h4><p>&emsp;&emsp;a. 闭包; b. 自执行函数（匿名函数）; c. 回调函数</p>
 <h4 id="attribute和property的区别？"><a href="#attribute和property的区别？" class="headerlink" title="attribute和property的区别？"></a>attribute和property的区别？</h4><p>&emsp;&emsp;attribute是指HTML元素上的属性，使用setAttribute()和getAttribute()来设置和获取；而property是JS对象的属性（获取的DOM节点在JS中是一个对象），设置和获取与常规JS对象属性无异</p>
-<h4 id="window-onload和document-DOMContentLoaded两个事件的区别？"><a href="#window-onload和document-DOMContentLoaded两个事件的区别？" class="headerlink" title="window.onload和document.DOMContentLoaded两个事件的区别？"></a>window.onload和document.DOMContentLoaded两个事件的区别？</h4><p>&emsp;&emsp;window.onload在页面的全部资源（包括样式表、图片、音频、子框架…）加载完后执行；而DOMContentLoaded是在HTML文档加载和解析后执行，即DOM渲染完执行，不需要等待其他资源加载<br>&emsp;&emsp;DOM完整解析过程<a href="https://www.jianshu.com/p/1a8a7e698447" target="_blank" rel="noopener">https://www.jianshu.com/p/1a8a7e698447</a></p>
+<h4 id="window-onload和document-DOMContentLoaded两个事件的区别？"><a href="#window-onload和document-DOMContentLoaded两个事件的区别？" class="headerlink" title="window.onload和document.DOMContentLoaded两个事件的区别？"></a>window.onload和document.DOMContentLoaded两个事件的区别？</h4><p>&emsp;&emsp;window.onload在页面的全部资源（包括样式表、图片、音频、子框架…）加载完后执行；而DOMContentLoaded是在HTML文档加载和解析后执行，即DOM渲染完执行，不需要等待其他资源加载<br>&emsp;&emsp;DOM完整解析过程<a href="https://www.jianshu.com/p/1a8a7e698447" target="_blank" rel="noopener">https://www.jianshu.com/p/1a8a7e698447</a></p>
 <h4 id="和-的区别？"><a href="#和-的区别？" class="headerlink" title="== 和 === 的区别？"></a>== 和 === 的区别？</h4><p>&emsp;&emsp;== 是弱相等，会先进行强制类型转换，然后进行值比较；=== 是严格相等，会比较两个变量的类型和值</p>
 <h4 id="？"><a href="#？" class="headerlink" title="[], [] === [], [] == []？"></a>[], [] === [], [] == []？</h4><p>&emsp;&emsp;空数组[]在JS中也是一个object，因此用在判断条件时会转换成true；但是任意值和布尔值比较时，都会将两边的值转换成Number: [] = 0, false = 0, true = 1<br>&emsp;&emsp;[] == [] 和 [] === [] 都是false，因为 [] 属于引用类型，引用类型的比较是需要比较两个引用值在内存中是否指向同一对象，两个空数组互不相关，因此都是false</p>
 <h4 id="undefined-undefined-undefined-undefined？"><a href="#undefined-undefined-undefined-undefined？" class="headerlink" title="undefined == undefined, undefined === undefined？"></a>undefined == undefined, undefined === undefined？</h4><p>&emsp;&emsp;undefined == undefined, undefined === undefined 都是true，因为undefined在JS是基本类型，也就是值类型，且只有一个值，所以无论是值和类型都是相等的。</p>
@@ -506,7 +506,7 @@
   <p><span>本文标题:</span>前端面试 —— JavaScript基础篇</p>
   <p><span>文章作者:</span>Lu, Ruihui</p>
   <p><span>发布时间:</span>2020年07月23日 - 18:21:52</p>
-  <p><span>最后更新:</span>2020年08月03日 - 21:14:38</p>
+  <p><span>最后更新:</span>2020年08月03日 - 21:15:35</p>
   <p><span>原始链接:</span><a href="/Interview-Questions/frontend-interview-js/" title="前端面试 —— JavaScript基础篇">http://yoursite.com/Interview-Questions/frontend-interview-js/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/Interview-Questions/frontend-interview-js/" aria-label="复制成功！"></i></span>
   </p>
