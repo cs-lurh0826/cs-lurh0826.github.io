@@ -91,14 +91,14 @@
 <meta name="keywords" content="Docker,ElasticSearch">
 <meta property="og:type" content="article">
 <meta property="og:title" content="简单介绍 - Docker和ElasticSearch">
-<meta property="og:url" content="https://cs-lurh0826.github.io/Developer-Tools/docker-and-elastic/index.html">
+<meta property="og:url" content="https://github.com/cs-lurh0826/cs-lurh0826.github.io/Developer-Tools/docker-and-elastic/index.html">
 <meta property="og:site_name" content="RLu&#39;s Blog">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://cs-lurh0826.github.io/Developer-Tools/docker-and-elastic/elastic.png">
-<meta property="og:updated_time" content="2020-04-24T04:54:17.000Z">
+<meta property="og:image" content="https://github.com/cs-lurh0826/cs-lurh0826.github.io/Developer-Tools/docker-and-elastic/elastic.png">
+<meta property="og:updated_time" content="2021-04-13T11:02:39.920Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="简单介绍 - Docker和ElasticSearch">
-<meta name="twitter:image" content="https://cs-lurh0826.github.io/Developer-Tools/docker-and-elastic/elastic.png">
+<meta name="twitter:image" content="https://github.com/cs-lurh0826/cs-lurh0826.github.io/Developer-Tools/docker-and-elastic/elastic.png">
 
 
 
@@ -128,7 +128,7 @@
 
 
 
-  <link rel="canonical" href="https://cs-lurh0826.github.io/Developer-Tools/docker-and-elastic/">
+  <link rel="canonical" href="https://github.com/cs-lurh0826/cs-lurh0826.github.io/Developer-Tools/docker-and-elastic/">
 
 
 
@@ -172,7 +172,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">Bien faire et laisser dire</p>
+        <p class="site-subtitle">To win, you gotta lose</p>
       
   </div>
 
@@ -316,7 +316,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://cs-lurh0826.github.io/Developer-Tools/docker-and-elastic/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/cs-lurh0826/cs-lurh0826.github.io/Developer-Tools/docker-and-elastic/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Lu, Ruihui">
@@ -348,7 +348,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-04-19T00:54:24-07:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-04-19T00:54:24+08:00">
                 2020-04-19
               </time>
             
@@ -364,8 +364,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2020-04-23T21:54:17-07:00">
-                2020-04-23
+              <time title="Post modified" itemprop="dateModified" datetime="2021-04-13T19:02:39+08:00">
+                2021-04-13
               </time>
             
           </span>
@@ -395,28 +395,7 @@
           
 
           
-            <span class="post-meta-divider">|</span>
-            <span class="page-pv"><i class="fa fa-eye"></i> 阅读量
-            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>次
-            </span>
-          
 
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Words count in article&#58;</span>
-                
-                <span title="Words count in article">
-                  1.5k
-                </span>
-              
-
-            </div>
           
 
           
@@ -433,7 +412,7 @@
       
 
       
-        <p><img src="/Developer-Tools/docker-and-elastic/elastic.png" width="100%" height="100%" alt="git"><br><a id="more"></a></p>
+        <p><img src="/cs-lurh0826/cs-lurh0826.github.io/Developer-Tools/docker-and-elastic/elastic.png" width="100%" height="100%" alt="git"><br><a id="more"></a></p>
 <h3 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a>Docker</h3><h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>容器引擎，能够打包/发布应用程序，包括系统环境、配置、依赖；虚拟化，沙箱机制(“轻量级虚拟机”)；Go语言编写。</p>
 <h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p><a href="https://www.docker.com/products/docker-desktop" target="_blank" rel="noopener">下载安装包并安装</a></p>
 <h4 id="术语"><a href="#术语" class="headerlink" title="术语"></a>术语</h4><p>host: 宿主机(正在使用Docker的机器)<br>image: 镜像(可以从远端拉取或者本地构建的可重复使用的软件打包)<br>container: 镜像运行时的容器<br>registry: 镜像的注册仓库<br>daemon: Docker的守护进程，用来接受用户命令、和registry共享<br>client: 客户端(给daemon输送命令)</p>
@@ -476,7 +455,7 @@
 <p>👆启动单点模式的elasticearch(可用于简单搜索)，端口9200</p>
 <h4 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h4><p>&lt;server&gt;:9200/index/type/id<br>index -&gt; database<br>type -&gt; table<br>id -&gt; JSON obj<br>其中，index和type无需预先创建；type中的数据类型可以不一致。<br>在elasticsearch7中，为了解决不同type的字段重名问题，type概念被移除了。</p>
 <h4 id="GET-PUT-POST-DELETE-REST"><a href="#GET-PUT-POST-DELETE-REST" class="headerlink" title="GET, PUT, POST, DELETE (REST)"></a>GET, PUT, POST, DELETE (REST)</h4><p>GET -&gt; &lt;server&gt;:9200/index/type/_search  表示搜索在当前index的type下的全部对象<br>GET -&gt; &lt;server&gt;:9200/index/type/_search?q=xxxxx  表示搜索在当前index的type下含有完整xxxxx的对象<br>GET -&gt; &lt;server&gt;:9200/index/type/_mapping  配置类型<br>PUT/POST -&gt; &lt;server&gt;:9200/index/type/id  创建/修改数据(不加id只能用POST来进行上传，id会随机分配)</p>
-<h4 id="Coding-Go语言"><a href="#Coding-Go语言" class="headerlink" title="Coding (Go语言)"></a>Coding (Go语言)</h4><h5 id="Package-Managers-import-“github-com-olivere-elastic-v7”"><a href="#Package-Managers-import-“github-com-olivere-elastic-v7”" class="headerlink" title="Package Managers (import “github.com/olivere/elastic/v7”)"></a>Package Managers (import “github.com/olivere/elastic/v7”)</h5><p><a href="https://github.com/olivere/elastic" target="_blank" rel="noopener">👇(适合新手学习，非官方，抽象更简单)</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">go get github.com/olivere/elastic/v7</span><br></pre></td></tr></table></figure></p>
+<h4 id="Coding-Go语言"><a href="#Coding-Go语言" class="headerlink" title="Coding (Go语言)"></a>Coding (Go语言)</h4><h5 id="Package-Managers-import-“github-com-olivere-elastic-v7”"><a href="#Package-Managers-import-“github-com-olivere-elastic-v7”" class="headerlink" title="Package Managers (import “github.com/olivere/elastic/v7”)"></a>Package Managers (import “github.com/olivere/elastic/v7”)</h5><p><a href="https://github.com/olivere/elastic">👇(适合新手学习，非官方，抽象更简单)</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">go get github.com/olivere/elastic/v7</span><br></pre></td></tr></table></figure></p>
 <h5 id="常用方法示例"><a href="#常用方法示例" class="headerlink" title="常用方法示例"></a>常用方法示例</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// Creates a new elasticsearch client</span><br><span class="line">client, err := elastic.NewClient(</span><br><span class="line">	// Must turn off sniff in docker</span><br><span class="line">	elastic.SetSniff(false))</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// Stores the data (create/modify)</span><br><span class="line">resp, err := client.Index().</span><br><span class="line">	Index(&quot;example&quot;).</span><br><span class="line">	Type(&quot;exp&quot;).</span><br><span class="line">	Id(&quot;1&quot;).</span><br><span class="line">	BodyJson(item).</span><br><span class="line">	Do(context.Background())</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// Gets the data</span><br><span class="line">resp, err := client.Get().</span><br><span class="line">	Index(&quot;example&quot;).</span><br><span class="line">	Type(&quot;exp&quot;).</span><br><span class="line">	Id(&quot;1&quot;).</span><br><span class="line">	Do(context.Background())</span><br></pre></td></tr></table></figure>
@@ -513,9 +492,9 @@
   <p><span>本文标题:</span>简单介绍 - Docker和ElasticSearch</p>
   <p><span>文章作者:</span>Lu, Ruihui</p>
   <p><span>发布时间:</span>2020年04月19日 - 00:54:24</p>
-  <p><span>最后更新:</span>2020年04月23日 - 21:54:17</p>
-  <p><span>原始链接:</span><a href="/Developer-Tools/docker-and-elastic/" title="简单介绍 - Docker和ElasticSearch">https://cs-lurh0826.github.io/Developer-Tools/docker-and-elastic/</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://cs-lurh0826.github.io/Developer-Tools/docker-and-elastic/" aria-label="复制成功！"></i></span>
+  <p><span>最后更新:</span>2021年04月13日 - 19:02:39</p>
+  <p><span>原始链接:</span><a href="/Developer-Tools/docker-and-elastic/" title="简单介绍 - Docker和ElasticSearch">https://github.com/cs-lurh0826/cs-lurh0826.github.io/Developer-Tools/docker-and-elastic/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://github.com/cs-lurh0826/cs-lurh0826.github.io/Developer-Tools/docker-and-elastic/" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -675,7 +654,7 @@
               <img class="site-author-image" itemprop="image" src="/images/icon.jpeg" alt="Lu, Ruihui">
             
               <p class="site-author-name" itemprop="name">Lu, Ruihui</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">Life, Love, and Fun</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -685,7 +664,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -707,7 +686,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -728,7 +707,7 @@
             <div class="links-of-author motion-element">
                 
                   <span class="links-of-author-item">
-                    <a href="https://github.com/CSCrazyman" target="_blank" title="GitHub">
+                    <a href="https://github.com/cs-lurh0826" target="_blank" title="GitHub">
                       
                         <i class="fa fa-fw fa-github"></i>GitHub</a>
                   </span>
@@ -821,7 +800,7 @@
         <div class="widget-wrap">
             <div id="myCanvasContainer" class="widget tagcloud">
                 <canvas width="250" height="250" id="resCanvas" style="width:100%;">
-                    <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/BQ问题/">BQ问题</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Docker/">Docker</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ElasticSearch/">ElasticSearch</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/FrontEnd/">FrontEnd</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/">JavaScript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kubernetes/">Kubernetes</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PWA/">PWA</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/React/">React</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Segment-Tree/">Segment Tree</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tree/">Tree</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Union-Find/">Union Find</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/面试技巧/">面试技巧</a><span class="tag-list-count">3</span></li></ul>
+                    <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Docker/">Docker</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ElasticSearch/">ElasticSearch</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/FrontEnd/">FrontEnd</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/">JavaScript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kubernetes/">Kubernetes</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PWA/">PWA</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/React/">React</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Segment-Tree/">Segment Tree</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tree/">Tree</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Union-Find/">Union Find</a><span class="tag-list-count">1</span></li></ul>
                 </canvas>
             </div>
         </div>
@@ -1111,7 +1090,6 @@ if(canvas.getContext){
   </span>
   <span class="author" itemprop="copyrightHolder">Lu, Ruihui</span>
 
-  
 </div>
 
 
@@ -1132,7 +1110,7 @@ if(canvas.getContext){
 <div>
   <!-- The number of total words -->
   <i class="fa fa-pencil"></i>
-  <span class="post-count">This site has 16.9k words totally</span>
+  <span class="post-count">This site has 13k words totally</span>
 </div>
 
 
@@ -1165,26 +1143,6 @@ show_date_time();
 </script>
 
         
-<div class="busuanzi-count">
-  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  
-    <span class="site-uv">
-      <i class="fa fa-user"></i> 访客数
-      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-      人次
-    </span>
-  
-
-  
-    <span class="site-pv">
-      <i class="fa fa-eye"></i> 访问量
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-      次
-    </span>
-  
-</div>
-
 
 
 

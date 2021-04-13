@@ -91,14 +91,14 @@
 <meta name="keywords" content="Tree,Union Find">
 <meta property="og:type" content="article">
 <meta property="og:title" content="并查集(Union Find)">
-<meta property="og:url" content="https://cs-lurh0826.github.io/Data-Structure/union-find/index.html">
+<meta property="og:url" content="https://github.com/cs-lurh0826/cs-lurh0826.github.io/Data-Structure/union-find/index.html">
 <meta property="og:site_name" content="RLu&#39;s Blog">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://cs-lurh0826.github.io/Data-Structure/union-find/unionfind.png">
-<meta property="og:updated_time" content="2020-05-31T03:05:12.000Z">
+<meta property="og:image" content="https://github.com/cs-lurh0826/cs-lurh0826.github.io/Data-Structure/union-find/unionfind.png">
+<meta property="og:updated_time" content="2021-04-13T11:02:46.188Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="并查集(Union Find)">
-<meta name="twitter:image" content="https://cs-lurh0826.github.io/Data-Structure/union-find/unionfind.png">
+<meta name="twitter:image" content="https://github.com/cs-lurh0826/cs-lurh0826.github.io/Data-Structure/union-find/unionfind.png">
 
 
 
@@ -128,7 +128,7 @@
 
 
 
-  <link rel="canonical" href="https://cs-lurh0826.github.io/Data-Structure/union-find/">
+  <link rel="canonical" href="https://github.com/cs-lurh0826/cs-lurh0826.github.io/Data-Structure/union-find/">
 
 
 
@@ -172,7 +172,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">Bien faire et laisser dire</p>
+        <p class="site-subtitle">To win, you gotta lose</p>
       
   </div>
 
@@ -316,7 +316,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://cs-lurh0826.github.io/Data-Structure/union-find/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/cs-lurh0826/cs-lurh0826.github.io/Data-Structure/union-find/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Lu, Ruihui">
@@ -348,7 +348,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-05-30T02:39:55-07:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-05-30T02:39:55+08:00">
                 2020-05-30
               </time>
             
@@ -364,8 +364,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2020-05-30T20:05:12-07:00">
-                2020-05-30
+              <time title="Post modified" itemprop="dateModified" datetime="2021-04-13T19:02:46+08:00">
+                2021-04-13
               </time>
             
           </span>
@@ -395,28 +395,7 @@
           
 
           
-            <span class="post-meta-divider">|</span>
-            <span class="page-pv"><i class="fa fa-eye"></i> 阅读量
-            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>次
-            </span>
-          
 
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Words count in article&#58;</span>
-                
-                <span title="Words count in article">
-                  2.1k
-                </span>
-              
-
-            </div>
           
 
           
@@ -433,7 +412,7 @@
       
 
       
-        <p><img src="/Data-Structure/union-find/unionfind.png" width="100%" height="100%" alt="git"><br><a id="more"></a></p>
+        <p><img src="/cs-lurh0826/cs-lurh0826.github.io/Data-Structure/union-find/unionfind.png" width="100%" height="100%" alt="git"><br><a id="more"></a></p>
 <h3 id="并查集的定义"><a href="#并查集的定义" class="headerlink" title="并查集的定义"></a>并查集的定义</h3><p>&emsp;&emsp;一种不一样的树形结构，其子节点指向父节点(树通常是父节点指向子节点)。<br>&emsp;&emsp;对于一组数据，主要支持两个动作:<br>&emsp;&emsp;union(p,q) 合并p和q两组数据及其集合<br>&emsp;&emsp;isConnected(p,q) 查询p和q两组数据是否属于同一集合</p>
 <h3 id="并查集的应用-连接问题-Connectivity-Problem"><a href="#并查集的应用-连接问题-Connectivity-Problem" class="headerlink" title="并查集的应用: 连接问题(Connectivity Problem)"></a>并查集的应用: 连接问题(Connectivity Problem)</h3><p>&emsp;&emsp;连接问题和路径问题: 存在路径/不存在 = 连接/不连接<br>&emsp;&emsp;但，连接问题比路径问题要回答的内容少，连接回答是否连接，而路径问题需要完整路径</p>
 <h4 id="经典问题之一：“网络”中节点间的连接状态"><a href="#经典问题之一：“网络”中节点间的连接状态" class="headerlink" title="经典问题之一：“网络”中节点间的连接状态"></a>经典问题之一：“网络”中节点间的连接状态</h4><h4 id="经典问题之二：数学中集合类的实现-求并集"><a href="#经典问题之二：数学中集合类的实现-求并集" class="headerlink" title="经典问题之二：数学中集合类的实现(求并集)"></a>经典问题之二：数学中集合类的实现(求并集)</h4><h3 id="代码实现-Java"><a href="#代码实现-Java" class="headerlink" title="代码实现(Java)"></a>代码实现(Java)</h3><p>&emsp;&emsp;👇先定义接口，然后使用不同底层数据结构来实现并查集<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public interface UF &#123;</span><br><span class="line">    int getSize();</span><br><span class="line">    boolean isConnected(int p, int q);  // id为p，id为q的两组数据</span><br><span class="line">    void unionElements(int p, int q);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
@@ -475,9 +454,9 @@
   <p><span>本文标题:</span>并查集(Union Find)</p>
   <p><span>文章作者:</span>Lu, Ruihui</p>
   <p><span>发布时间:</span>2020年05月30日 - 02:39:55</p>
-  <p><span>最后更新:</span>2020年05月30日 - 20:05:12</p>
-  <p><span>原始链接:</span><a href="/Data-Structure/union-find/" title="并查集(Union Find)">https://cs-lurh0826.github.io/Data-Structure/union-find/</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://cs-lurh0826.github.io/Data-Structure/union-find/" aria-label="复制成功！"></i></span>
+  <p><span>最后更新:</span>2021年04月13日 - 19:02:46</p>
+  <p><span>原始链接:</span><a href="/Data-Structure/union-find/" title="并查集(Union Find)">https://github.com/cs-lurh0826/cs-lurh0826.github.io/Data-Structure/union-find/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://github.com/cs-lurh0826/cs-lurh0826.github.io/Data-Structure/union-find/" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -637,7 +616,7 @@
               <img class="site-author-image" itemprop="image" src="/images/icon.jpeg" alt="Lu, Ruihui">
             
               <p class="site-author-name" itemprop="name">Lu, Ruihui</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">Life, Love, and Fun</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -647,7 +626,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -669,7 +648,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -690,7 +669,7 @@
             <div class="links-of-author motion-element">
                 
                   <span class="links-of-author-item">
-                    <a href="https://github.com/CSCrazyman" target="_blank" title="GitHub">
+                    <a href="https://github.com/cs-lurh0826" target="_blank" title="GitHub">
                       
                         <i class="fa fa-fw fa-github"></i>GitHub</a>
                   </span>
@@ -783,7 +762,7 @@
         <div class="widget-wrap">
             <div id="myCanvasContainer" class="widget tagcloud">
                 <canvas width="250" height="250" id="resCanvas" style="width:100%;">
-                    <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/BQ问题/">BQ问题</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Docker/">Docker</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ElasticSearch/">ElasticSearch</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/FrontEnd/">FrontEnd</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/">JavaScript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kubernetes/">Kubernetes</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PWA/">PWA</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/React/">React</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Segment-Tree/">Segment Tree</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tree/">Tree</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Union-Find/">Union Find</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/面试技巧/">面试技巧</a><span class="tag-list-count">3</span></li></ul>
+                    <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Docker/">Docker</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ElasticSearch/">ElasticSearch</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/FrontEnd/">FrontEnd</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/">JavaScript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kubernetes/">Kubernetes</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PWA/">PWA</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/React/">React</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Segment-Tree/">Segment Tree</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tree/">Tree</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Union-Find/">Union Find</a><span class="tag-list-count">1</span></li></ul>
                 </canvas>
             </div>
         </div>
@@ -1073,7 +1052,6 @@ if(canvas.getContext){
   </span>
   <span class="author" itemprop="copyrightHolder">Lu, Ruihui</span>
 
-  
 </div>
 
 
@@ -1094,7 +1072,7 @@ if(canvas.getContext){
 <div>
   <!-- The number of total words -->
   <i class="fa fa-pencil"></i>
-  <span class="post-count">This site has 16.9k words totally</span>
+  <span class="post-count">This site has 13k words totally</span>
 </div>
 
 
@@ -1127,26 +1105,6 @@ show_date_time();
 </script>
 
         
-<div class="busuanzi-count">
-  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  
-    <span class="site-uv">
-      <i class="fa fa-user"></i> 访客数
-      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-      人次
-    </span>
-  
-
-  
-    <span class="site-pv">
-      <i class="fa fa-eye"></i> 访问量
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-      次
-    </span>
-  
-</div>
-
 
 
 

@@ -91,14 +91,14 @@
 <meta name="keywords" content="Tree,Segment Tree">
 <meta property="og:type" content="article">
 <meta property="og:title" content="线段树&#x2F;区间树(Segment Tree)">
-<meta property="og:url" content="https://cs-lurh0826.github.io/Data-Structure/SegmentTree/index.html">
+<meta property="og:url" content="https://github.com/cs-lurh0826/cs-lurh0826.github.io/Data-Structure/SegmentTree/index.html">
 <meta property="og:site_name" content="RLu&#39;s Blog">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://cs-lurh0826.github.io/Data-Structure/SegmentTree/segment.png">
-<meta property="og:updated_time" content="2020-06-30T04:37:50.000Z">
+<meta property="og:image" content="https://github.com/cs-lurh0826/cs-lurh0826.github.io/Data-Structure/SegmentTree/segment.png">
+<meta property="og:updated_time" content="2021-04-13T11:02:26.566Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="线段树&#x2F;区间树(Segment Tree)">
-<meta name="twitter:image" content="https://cs-lurh0826.github.io/Data-Structure/SegmentTree/segment.png">
+<meta name="twitter:image" content="https://github.com/cs-lurh0826/cs-lurh0826.github.io/Data-Structure/SegmentTree/segment.png">
 
 
 
@@ -128,7 +128,7 @@
 
 
 
-  <link rel="canonical" href="https://cs-lurh0826.github.io/Data-Structure/SegmentTree/">
+  <link rel="canonical" href="https://github.com/cs-lurh0826/cs-lurh0826.github.io/Data-Structure/SegmentTree/">
 
 
 
@@ -172,7 +172,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">Bien faire et laisser dire</p>
+        <p class="site-subtitle">To win, you gotta lose</p>
       
   </div>
 
@@ -316,7 +316,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://cs-lurh0826.github.io/Data-Structure/SegmentTree/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/cs-lurh0826/cs-lurh0826.github.io/Data-Structure/SegmentTree/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Lu, Ruihui">
@@ -348,7 +348,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-14T23:04:30-07:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-14T23:04:30+08:00">
                 2019-07-14
               </time>
             
@@ -364,8 +364,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2020-06-29T21:37:50-07:00">
-                2020-06-29
+              <time title="Post modified" itemprop="dateModified" datetime="2021-04-13T19:02:26+08:00">
+                2021-04-13
               </time>
             
           </span>
@@ -395,28 +395,7 @@
           
 
           
-            <span class="post-meta-divider">|</span>
-            <span class="page-pv"><i class="fa fa-eye"></i> 阅读量
-            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>次
-            </span>
-          
 
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Words count in article&#58;</span>
-                
-                <span title="Words count in article">
-                  991
-                </span>
-              
-
-            </div>
           
 
           
@@ -433,7 +412,7 @@
       
 
       
-        <p><img src="/Data-Structure/SegmentTree/segment.png" width="100%" height="100%" alt="git"><br><a id="more"></a></p>
+        <p><img src="/cs-lurh0826/cs-lurh0826.github.io/Data-Structure/SegmentTree/segment.png" width="100%" height="100%" alt="git"><br><a id="more"></a></p>
 <h3 id="线段树的定义"><a href="#线段树的定义" class="headerlink" title="线段树的定义"></a>线段树的定义</h3><p>&emsp;&emsp;实质是二叉树(平衡但不完全)，但每一个节点都是一个区间(根据业务逻辑的定义)。例如求和，根结点就是所有的元素和，叶子结点就是一个元素的值。<br>&emsp;&emsp;如果区间内有n个元素，使用数组表示线段树，在一般不考虑添加元素的前提下，使用4n的静态空间即可。</p>
 <h3 id="线段树的应用"><a href="#线段树的应用" class="headerlink" title="线段树的应用"></a>线段树的应用</h3><p>&emsp;&emsp;对于某一类问题，我们关心的是一段区间(线段)</p>
 <h4 id="经典问题之一：区间染色"><a href="#经典问题之一：区间染色" class="headerlink" title="经典问题之一：区间染色"></a>经典问题之一：区间染色</h4><p>&emsp;&emsp;有一面长度为n的墙，每次选择一段墙进行染色。<br>&emsp;&emsp;1. m次操作后，我们可以看见多少种颜色?<br>&emsp;&emsp;2. m次操作后，我们在[i, j]区间内看见多少种颜色?<br>&emsp;&emsp;染色操作 = 更新区间，查询操作 = 查询区间</p>
@@ -474,9 +453,9 @@
   <p><span>本文标题:</span>线段树/区间树(Segment Tree)</p>
   <p><span>文章作者:</span>Lu, Ruihui</p>
   <p><span>发布时间:</span>2019年07月14日 - 23:04:30</p>
-  <p><span>最后更新:</span>2020年06月29日 - 21:37:50</p>
-  <p><span>原始链接:</span><a href="/Data-Structure/SegmentTree/" title="线段树/区间树(Segment Tree)">https://cs-lurh0826.github.io/Data-Structure/SegmentTree/</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://cs-lurh0826.github.io/Data-Structure/SegmentTree/" aria-label="复制成功！"></i></span>
+  <p><span>最后更新:</span>2021年04月13日 - 19:02:26</p>
+  <p><span>原始链接:</span><a href="/Data-Structure/SegmentTree/" title="线段树/区间树(Segment Tree)">https://github.com/cs-lurh0826/cs-lurh0826.github.io/Data-Structure/SegmentTree/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://github.com/cs-lurh0826/cs-lurh0826.github.io/Data-Structure/SegmentTree/" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -551,8 +530,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/Interview-Questions/bq3/" rel="next" title="面试准备——BQ问题(三)">
-                <i class="fa fa-chevron-left"></i> 面试准备——BQ问题(三)
+              <a href="/Programming-Laugauge/markdown/" rel="next" title="Markdown">
+                <i class="fa fa-chevron-left"></i> Markdown
               </a>
             
           </div>
@@ -636,7 +615,7 @@
               <img class="site-author-image" itemprop="image" src="/images/icon.jpeg" alt="Lu, Ruihui">
             
               <p class="site-author-name" itemprop="name">Lu, Ruihui</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">Life, Love, and Fun</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -646,7 +625,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -668,7 +647,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -689,7 +668,7 @@
             <div class="links-of-author motion-element">
                 
                   <span class="links-of-author-item">
-                    <a href="https://github.com/CSCrazyman" target="_blank" title="GitHub">
+                    <a href="https://github.com/cs-lurh0826" target="_blank" title="GitHub">
                       
                         <i class="fa fa-fw fa-github"></i>GitHub</a>
                   </span>
@@ -782,7 +761,7 @@
         <div class="widget-wrap">
             <div id="myCanvasContainer" class="widget tagcloud">
                 <canvas width="250" height="250" id="resCanvas" style="width:100%;">
-                    <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/BQ问题/">BQ问题</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Docker/">Docker</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ElasticSearch/">ElasticSearch</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/FrontEnd/">FrontEnd</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/">JavaScript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kubernetes/">Kubernetes</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PWA/">PWA</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/React/">React</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Segment-Tree/">Segment Tree</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tree/">Tree</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Union-Find/">Union Find</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/面试技巧/">面试技巧</a><span class="tag-list-count">3</span></li></ul>
+                    <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Docker/">Docker</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ElasticSearch/">ElasticSearch</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/FrontEnd/">FrontEnd</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/">JavaScript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kubernetes/">Kubernetes</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PWA/">PWA</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/React/">React</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Segment-Tree/">Segment Tree</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tree/">Tree</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Union-Find/">Union Find</a><span class="tag-list-count">1</span></li></ul>
                 </canvas>
             </div>
         </div>
@@ -1072,7 +1051,6 @@ if(canvas.getContext){
   </span>
   <span class="author" itemprop="copyrightHolder">Lu, Ruihui</span>
 
-  
 </div>
 
 
@@ -1093,7 +1071,7 @@ if(canvas.getContext){
 <div>
   <!-- The number of total words -->
   <i class="fa fa-pencil"></i>
-  <span class="post-count">This site has 16.9k words totally</span>
+  <span class="post-count">This site has 13k words totally</span>
 </div>
 
 
@@ -1126,26 +1104,6 @@ show_date_time();
 </script>
 
         
-<div class="busuanzi-count">
-  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  
-    <span class="site-uv">
-      <i class="fa fa-user"></i> 访客数
-      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-      人次
-    </span>
-  
-
-  
-    <span class="site-pv">
-      <i class="fa fa-eye"></i> 访问量
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-      次
-    </span>
-  
-</div>
-
 
 
 
